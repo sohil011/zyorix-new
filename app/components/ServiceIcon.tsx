@@ -1,5 +1,8 @@
 ﻿import React from "react";
-export default function ServiceIcon({ name }: { name: "audit"|"optimize"|"govern"|"forecast" }) {
+
+export type IconName = "audit" | "optimize" | "govern" | "forecast";
+
+export default function ServiceIcon({ name }: { name: IconName }) {
   const common = "h-6 w-6 text-emerald-600";
   if (name === "audit") return (
     <svg className={common} viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h14a2 2 0 0 1 2 2v9l-4 4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm2 3h10v2H5V7Zm0 4h10v2H5v-2Zm0 4h7v2H5v-2Z"/></svg>
