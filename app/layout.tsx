@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   
           <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
 <Link href="/" className="flex items-center gap-2 md:gap-3">
-  <Image src="/zyorix-logo-embedded.svg" alt="Zyorix Logo" width={220} height={55} priority className="w-auto"/>
+  <Image src="/zyorix-logo-embedded.svg" width={240} height={60} className="h-12 md:h-14 w-auto" alt="Zyorix Logo" priority/>
 </Link>
   
             
@@ -90,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
