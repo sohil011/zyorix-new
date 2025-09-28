@@ -1,5 +1,7 @@
 ﻿import "./globals.css";
 import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP",
@@ -23,18 +25,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
           <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
-              <img src="/zyorix-logo-embedded.svg" alt="Zyorix Logo" className="h-6 w-auto" />
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/zyorix-logo-embedded.svg"
+                alt="Zyorix Logo"
+                width={120}
+                height={24}
+                priority
+              />
               <span className="font-semibold">Zyorix</span>
-            </a>
+            </Link>
+
             <div className="hidden md:flex items-center gap-6 text-sm">
-              <a href="/services">Services</a>
-              <a href="/pricing">Pricing</a>
-              <a href="/case-studies">Case Studies</a>
-              <a href="/blog">Blog</a>
-              <a href="/about">About</a>
-              <a href="/contact">Contact</a>
-              <a href="/contact" className="ml-2 rounded-xl bg-emerald-500 text-white px-3 py-1.5 font-semibold">Book Consultation</a>
+              <Link href="/services">Services</Link>
+              <Link href="/pricing">Pricing</Link>
+              <Link href="/case-studies">Case Studies</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/contact" className="ml-2 rounded-xl bg-emerald-500 text-white px-3 py-1.5 font-semibold">
+                Book Consultation
+              </Link>
             </div>
           </nav>
         </header>
@@ -46,31 +57,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <div className="font-semibold mb-2">Company</div>
               <ul className="space-y-1">
-                <li><a href="/about">About</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
             <div>
               <div className="font-semibold mb-2">Services</div>
               <ul className="space-y-1">
-                <li><a href="/services">FinOps Assessment</a></li>
-                <li><a href="/services#optimization">Cost Optimization</a></li>
-                <li><a href="/services#governance">Governance</a></li>
+                <li><Link href="/services">FinOps Assessment</Link></li>
+                <li><Link href="/services#optimization">Cost Optimization</Link></li>
+                <li><Link href="/services#governance">Governance</Link></li>
               </ul>
             </div>
             <div>
               <div className="font-semibold mb-2">Resources</div>
               <ul className="space-y-1">
-                <li><a href="/case-studies">Case Studies</a></li>
-                <li><a href="/pricing">Pricing</a></li>
+                <li><Link href="/case-studies">Case Studies</Link></li>
+                <li><Link href="/pricing">Pricing</Link></li>
               </ul>
             </div>
             <div>
               <div className="font-semibold mb-2">Legal</div>
               <ul className="space-y-1">
-                <li><a href="/privacy">Privacy Policy</a></li>
-                <li><a href="/terms">Terms of Service</a></li>
+                <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/terms">Terms of Service</Link></li>
               </ul>
             </div>
           </div>
