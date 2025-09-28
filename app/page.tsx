@@ -87,7 +87,6 @@ export default function Home() {
     </main>
   );
 }
- import Image from "next/image";
 import HeroValueIndex from "./components/HeroValueIndex";
 import ServiceIcon, { IconName } from "./components/ServiceIcon";
 import home from "../content/home";
@@ -105,4 +104,5 @@ const trackCta = (name: 'book' | 'learn_more'): void => {
 };
 // === end analytics helper ===
 export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
+
 
