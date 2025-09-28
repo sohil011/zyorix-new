@@ -65,7 +65,17 @@ export default function HeroChart() {
         {bars.map((h,i)=>{
           const x = 100 + i*80;
           return (
-            <rect key={i} x={x} y={460-h} width="32" height={h} rx="6" fill="var(--bar)" className="bar" style={{ animationDelay: \`\${i*120}ms\` }} />
+            <rect
+              key={i}
+              x={x}
+              y={460-h}
+              width="32"
+              height={h}
+              rx="6"
+              fill="var(--bar)"
+              className="bar"
+              style={{ animationDelay: (i*120) + "ms" }}
+            />
           );
         })}
 
