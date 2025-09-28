@@ -99,8 +99,7 @@ function ValueGauge({ value, baseline, target }: { value: number; baseline: numb
       <text x="50%" y="62%" textAnchor="middle"
         style={{ fontWeight: 600, fontSize: 14, fontFamily: "ui-sans-serif,system-ui" }}
         className="fill-emerald-700">
-        Value per £
-      </text>
+        Business value per £</text>
     </svg>
   );
 }
@@ -151,3 +150,4 @@ function SparkCard({ title, subtitle, color, aria, points, up }: SparkProps) {
     </div>
   );
 }
+

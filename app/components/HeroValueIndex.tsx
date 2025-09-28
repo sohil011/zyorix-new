@@ -73,8 +73,7 @@ export default function HeroValueIndex() {
             </text>
             <text x="50%" y="62%" textAnchor="middle" className="fill-emerald-700"
               style={{ fontWeight: 600, fontSize: "14px", fontFamily: "ui-sans-serif, system-ui" }}>
-              Value per £
-            </text>
+              Business value per £</text>
           </g>
         </svg>
       </div>
@@ -91,8 +90,8 @@ export default function HeroValueIndex() {
 
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
           <KPI label="Predictable" value="±5–10%" hint="Forecast variance" />
-          <KPI label="Allocated" value="90–95%" hint="Tag/label coverage" />
-          <KPI label="Resilient" value="99.9%+" hint="Availability/SLO" />
+          <KPI label="Allocated" value="90–95%" hint="Allocation & tagging" />
+          <KPI label="Resilient" value="99.9%+" hint="Availability & SLO" />
         </div>
 
         {/* Mini trends */}
@@ -117,3 +116,6 @@ function KPI({ label, value, hint }: KPIProps) {
     </div>
   );
 }
+
+
+
