@@ -24,9 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#main" className="sr-only focus:not-sr-only p-2 bg-white">Skip to content</a>
 
         <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-  <Link href="/" className="flex items-center gap-2 md:gap-3">
-  <Image src="/zyorix-logo-embedded.svg" alt="Zyorix Logo" width={160} height={40} priority className="h-8 w-auto md:h-10"/>
+<Link href="/" className="flex items-center gap-2 md:gap-3">
+  <Image src="/zyorix-logo-embedded.svg" alt="Zyorix Logo" width={200} height={50} priority className="h-10 w-auto md:h-12"/>
 </Link>
+  
           <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
   
             
@@ -88,6 +89,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+
+
 
 
 
