@@ -3,18 +3,19 @@ import HeroValueIndex from "./components/HeroValueIndex";
 import ServiceIcon, { IconName } from "./components/ServiceIcon";
 import home from "../content/home";
 
+// gtag CTA helper
 // === analytics helper (typed, no any) ===
 declare global {
   interface Window {
     gtag?: (event: string, name: string, params?: Record<string, unknown>) => void;
   }
 }
-export {};
-/* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const trackCta = (name: 'book' | 'learn_more'): void => {
   try { window.gtag?.('event', 'cta_click', { location: 'hero', cta: name }); } catch {}
 };
 // === end analytics helper ===
+} catch {}
+};
 export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
 
 export default function Home() {
@@ -99,7 +100,5 @@ export default function Home() {
     </main>
   );
 }
-
-
 
 

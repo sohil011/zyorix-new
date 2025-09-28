@@ -15,6 +15,10 @@ const trackCta = (name: 'book' | 'learn_more'): void => {
   try { window.gtag?.('event', 'cta_click', { location: 'hero', cta: name }); } catch {}
 };
 // === end analytics helper ===
+
+// gtag CTA helper
+} catch {}
+};
 export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
 
 export default function Home() {
@@ -99,7 +103,6 @@ export default function Home() {
     </main>
   );
 }
-
 
 
 

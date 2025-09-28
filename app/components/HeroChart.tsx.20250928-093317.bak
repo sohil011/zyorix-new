@@ -5,9 +5,7 @@ import React, { useEffect, useState } from "react";
  * HeroChart (final)
  * - Donut gauge for Value per £ (1.00x -> 1.35x)
  * - Two sparklines below: Outcomes/Throughput (up), Cloud Spend (flat-to-down)
-
-<p className="sr-only">Cloud spend trend: decreasing; x-axis time, y-axis managed cost.</p>
-<p className="sr-only">Outcomes trend: increasing; x-axis time, y-axis throughput proxy.</p> * - Calm ~1.6s animation; labels inside bounds; AA contrast
+ * - Calm ~1.6s animation; labels inside bounds; AA contrast
  */
 export default function HeroChart() {
   const baseline = 1.0;
@@ -152,5 +150,4 @@ function SparkCard({ title, subtitle, color, aria, points, up }: SparkProps) {
     </div>
   );
 }
-
 
