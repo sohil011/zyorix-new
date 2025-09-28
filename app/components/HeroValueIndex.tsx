@@ -1,42 +1,39 @@
 ﻿"use client";
 import React, { useEffect, useState } from "react";
+import HeroMiniTrends from "./HeroMiniTrends";
 
 /**
- * HeroValueIndex
- * A calm ring gauge that animates Value per £ from baseline to target,
- * plus three outcome KPIs underneath (predictable / allocated / resilient).
- * ASCII-only to avoid encoding issues.
+ * HeroValueIndex + MiniTrends
+ * - Donut gauge: Value per £ animates from 1.00x -> 1.35x
+ * - KPI chips: Predictable / Allocated / Resilient
+ * - Mini sparklines: Outcomes up, Spend flat-to-down
  */
 export default function HeroValueIndex() {
-  const baseline = 1.00; // starting efficiency
-  const target = 1.35;   // target efficiency
+  const baseline = 1.00;
+  const target = 1.35;
 
   const [value, setValue] = useState<number>(baseline);
 
   useEffect(() => {
     const start = performance.now();
-    const duration = 1600; // ms
+    const duration = 1600;
     let raf = 0;
-
     const tick = (t: number) => {
       const p = Math.min(1, (t - start) / duration);
-      const eased = 1 - Math.pow(1 - p, 3); // ease-out
+      const eased = 1 - Math.pow(1 - p, 3);
       const v = baseline + (target - baseline) * eased;
       setValue(Number(v.toFixed(2)));
       if (p < 1) raf = requestAnimationFrame(tick);
     };
-
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  // Ring geometry
   const size = 220;
   const stroke = 14;
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
 
-  // Map value to progress (1.00 -> 0%, 1.35 -> 35%)
   const progress = Math.max(0, Math.min(1, (value - baseline) / (target - baseline)));
   const dash = circumference * progress;
 
@@ -52,10 +49,10 @@ export default function HeroValueIndex() {
             </linearGradient>
           </defs>
 
-          {/* Track */}
+        {/* Track */}
           <circle cx={size / 2} cy={size / 2} r={radius} stroke="#e5e7eb" strokeWidth={stroke} fill="none" />
 
-          {/* Progress */}
+        {/* Progress */}
           <circle
             cx={size / 2}
             cy={size / 2}
@@ -70,22 +67,12 @@ export default function HeroValueIndex() {
 
           {/* Center label */}
           <g>
-            <text
-              x="50%"
-              y="48%"
-              textAnchor="middle"
-              className="fill-slate-900"
-              style={{ fontWeight: 800, fontSize: "28px", fontFamily: "ui-sans-serif, system-ui" }}
-            >
+            <text x="50%" y="48%" textAnchor="middle" className="fill-slate-900"
+              style={{ fontWeight: 800, fontSize: "28px", fontFamily: "ui-sans-serif, system-ui" }}>
               {value.toFixed(2)}x
             </text>
-            <text
-              x="50%"
-              y="62%"
-              textAnchor="middle"
-              className="fill-emerald-700"
-              style={{ fontWeight: 600, fontSize: "14px", fontFamily: "ui-sans-serif, system-ui" }}
-            >
+            <text x="50%" y="62%" textAnchor="middle" className="fill-emerald-700"
+              style={{ fontWeight: 600, fontSize: "14px", fontFamily: "ui-sans-serif, system-ui" }}>
               Value per £
             </text>
           </g>
@@ -108,8 +95,11 @@ export default function HeroValueIndex() {
           <KPI label="Resilient" value="99.9%+" hint="Availability/SLO" />
         </div>
 
+        {/* Mini trends */}
+        <HeroMiniTrends />
+
         <p className="mt-4 text-xs text-slate-500">
-          Value per £ = outcomes (throughput or revenue proxies) divided by cloud spend. Zyorix improves the numerator and manages the denominator.
+          Value per £ = outcomes (throughput or revenue proxies) divided by cloud spend.
         </p>
       </div>
     </section>
