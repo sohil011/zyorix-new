@@ -93,9 +93,10 @@ export default function HeroChart() {
         <g transform="translate(520,232)">
           <rect x="0" y="0" width="110" height="28" rx="14" className="badge"/>
           <circle cx="16" cy="14" r="6" fill="#10b981"/>
-          <text x="32" y="18" className="label" fill="#065f46">Savings</text>
+          <text x="32" y="18" className="label" fill="#065f46">Value Delivered</text>
         </g>
       </svg>
     </div>
   );
 }
+

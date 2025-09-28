@@ -1,8 +1,8 @@
 ﻿const home = {
   hero: {
-    title: "Optimize Your Cloud Spend with Zyorix",
-    sub: "Independent FinOps consultancy for AWS, Azure, and GCP - from assessment to ongoing governance.",
-    proof: "Clients typically save 20-30% within 90 days."
+    title: "Predictable, Efficient Cloud — With Zyorix",
+    sub: "Independent FinOps that aligns engineering and finance to deliver measurable savings, reliable forecasts, and sustainable governance across AWS, Azure, and GCP.",
+    proof: "Typical programs: 20-30% savings, ±5-10% forecast accuracy, 90-95% allocation in year one."
   },
   trust: [
     "/img/trust/logo1.svg",
@@ -13,7 +13,7 @@
     "/img/trust/logo6.svg"
   ],
   services: [
-    { title: "FinOps Assessment / Health Check", desc: "A rapid baseline of spend, tagging, and waste. 90-day plan.", icon: "audit" },
+    { title: "FinOps Assessment / Health Check", desc: "Baseline spend, tagging, and waste. 90-day plan.", icon: "audit" },
     { title: "Cost Optimization & Commitment Strategy", desc: "Rightsizing and commitments (RIs, SPs, CUDs).", icon: "optimize" },
     { title: "Cloud Allocation & Governance", desc: "Tag strategy, cost model, showback/chargeback.", icon: "govern" },
     { title: "Forecasting & Budget Governance", desc: "Forecasts, variance control, anomaly detection.", icon: "forecast" }
