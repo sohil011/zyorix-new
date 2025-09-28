@@ -1,8 +1,6 @@
-﻿@tailwind base;
-@tailwind components;
-@tailwind utilities;
+﻿@import "tailwindcss";
 
-/* Minimal fallback so page is readable even if Tailwind plugin fails */
+/* Minimal base so content is readable even if Tailwind fails */
 :root { color-scheme: light; }
 html, body {
   margin: 0;
