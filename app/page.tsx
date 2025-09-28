@@ -1,6 +1,14 @@
-﻿export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
+﻿import Image from "next/image";
+
+export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
 
 export default function Home() {
+  const trust = [
+    "/img/trust/logo1.svg",
+    "/img/trust/logo2.svg",
+    "/img/trust/logo3.svg",
+    "/img/trust/logo4.svg",
+  ];
   return (
     <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero */}
@@ -16,19 +24,27 @@ export default function Home() {
             <a href="#services" className="rounded-xl border px-5 py-3 font-semibold">Learn More</a>
           </div>
         </div>
-        <div className="rounded-xl bg-slate-100 aspect-[4/3] flex items-center justify-center">
-          {/* Replace later with <img src="/img/home/hero-image.webp" alt="Abstract FinOps analytics" className="rounded-xl w-full h-auto" /> */}
-          <span className="text-slate-500 text-sm">Hero Image Placeholder</span>
+        <div className="rounded-xl bg-slate-100">
+          <Image
+            src="/img/home/hero-analytics.svg"
+            alt="Abstract FinOps analytics with charts and cloud"
+            width={960}
+            height={720}
+            priority
+            className="rounded-xl w-full h-auto"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
         </div>
       </div>
 
       {/* Trust strip */}
-      <div className="mt-10 text-center text-sm text-slate-600">Trusted by engineering, finance, and platform teams</div>
-      <div className="mt-4 flex gap-8 justify-center opacity-60">
-        <div className="h-6 w-20 bg-slate-200 rounded" />
-        <div className="h-6 w-20 bg-slate-200 rounded" />
-        <div className="h-6 w-20 bg-slate-200 rounded" />
-        <div className="h-6 w-20 bg-slate-200 rounded" />
+      <div className="mt-10 text-center text-sm text-slate-600">
+        Trusted by engineering, finance, and platform teams
+      </div>
+      <div className="mt-4 flex flex-wrap gap-8 justify-center opacity-80">
+        {trust.map((src,i)=>(
+          <Image key={i} src={src} alt="Client logo placeholder" width={120} height={28} />
+        ))}
       </div>
 
       {/* Services */}
@@ -50,7 +66,9 @@ export default function Home() {
       {/* Why Choose */}
       <div className="mt-16 text-center">
         <h2 className="text-3xl font-semibold">Why Choose Zyorix?</h2>
-        <p className="mt-2 text-slate-700">Independent expertise, tailored to your scale - faster savings and sustainable cloud governance.</p>
+        <p className="mt-2 text-slate-700">
+          Independent expertise, tailored to your scale - faster savings and sustainable cloud governance.
+        </p>
         <div className="mt-8 grid gap-6 md:grid-cols-3 text-left">
           {[
             ["Client-Centric Approach","Tailored strategies, not SaaS templates."],
@@ -103,4 +121,3 @@ export default function Home() {
     </section>
   );
 }
-
