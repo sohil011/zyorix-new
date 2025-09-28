@@ -1,4 +1,13 @@
-﻿const home = {
+﻿import type { IconName } from "../app/components/ServiceIcon";
+
+type Service = { title: string; desc: string; icon: IconName };
+type Home = {
+  hero: { title: string; sub: string; proof: string };
+  trust: string[];
+  services: Service[];
+};
+
+const home: Home = {
   hero: {
     title: "Predictable, Efficient Cloud — With Zyorix",
     sub: "Independent FinOps that aligns engineering and finance to deliver measurable savings, reliable forecasts, and sustainable governance across AWS, Azure, and GCP.",
@@ -18,6 +27,6 @@
     { title: "Cloud Allocation & Governance", desc: "Tag strategy, cost model, showback/chargeback.", icon: "govern" },
     { title: "Forecasting & Budget Governance", desc: "Forecasts, variance control, anomaly detection.", icon: "forecast" }
   ]
-} as const;
+};
 
 export default home;

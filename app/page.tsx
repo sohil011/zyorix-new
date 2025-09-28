@@ -1,6 +1,6 @@
 ﻿import Image from "next/image";
 import HeroChart from "./components/HeroChart";
-import ServiceIcon from "./components/ServiceIcon";
+import ServiceIcon, { IconName } from "./components/ServiceIcon";
 import home from "../content/home";
 
 export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
@@ -55,7 +55,7 @@ export default function Home() {
         {home.services.map((s, i) => (
           <div key={i} className="rounded-2xl border p-5 bg-white shadow-sm">
             <div className="mb-3 inline-flex items-center justify-center rounded-md bg-emerald-50 p-2">
-              <ServiceIcon name={s.icon as import("./components/ServiceIcon").default extends (props: infer P) => any ? P extends { name: infer N } ? N : never : never} />
+              <ServiceIcon name={s.icon as IconName} />
             </div>
             <h3 className="font-semibold">{s.title}</h3>
             <p className="mt-2 text-sm text-slate-700">{s.desc}</p>
