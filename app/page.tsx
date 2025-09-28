@@ -1,7 +1,7 @@
 ﻿import Image from "next/image";
 import HeroChart from "./components/HeroChart";
 import ServiceIcon from "./components/ServiceIcon";
-import home from "../content/home.json";
+import home from "../content/home";
 
 export const metadata = { title: "Zyorix | Independent FinOps Consultancy for AWS, Azure & GCP" };
 
@@ -100,3 +100,4 @@ export default function Home() {
     </section>
   );
 }
+
