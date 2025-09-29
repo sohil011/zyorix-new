@@ -42,3 +42,8 @@ next-env.d.ts
 
 # Do not commit backups
 *.bak
+
+# local backups
+_backups/**
+*.backup.tsx
+*.bak

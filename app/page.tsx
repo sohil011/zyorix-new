@@ -87,9 +87,6 @@ export default function Home() {
     </main>
   );
 }
-import HeroValueIndex from "./components/HeroValueIndex";
-import ServiceIcon, { IconName } from "./components/ServiceIcon";
-import home from "../content/home";
 
 // === analytics helper (typed, no any) ===
 declare global {
