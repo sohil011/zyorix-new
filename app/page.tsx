@@ -60,24 +60,51 @@ export default function Home() {
       </section>
 
       {/* CTA form */}
-      <section className="rounded-2xl bg-slate-900 text-white p-8">
-        <h2 className="text-center text-2xl font-semibold">Book Your Free Consultation</h2>
-        <p className="text-center mt-2 text-slate-300">Take the first step toward predictable, efficient cloud spend.</p>
-        <form action="/contact" method="GET" className="mx-auto mt-6 max-w-xl grid gap-3" aria-label="Consultation request form">
-          <input type="text" name="company_website" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-          <label className="sr-only" htmlFor="name">Full Name</label>
-          <input id="name" name="name" required placeholder="Full Name" className="rounded-lg bg-white/10 px-4 py-3 outline-none focus:bg-white focus:text-slate-900" aria-required="true"/>
-          <label className="sr-only" htmlFor="email">Work Email</label>
-          <input id="email" name="email" type="email" required placeholder="Work Email" className="rounded-lg bg-white/10 px-4 py-3 outline-none focus:bg-white focus:text-slate-900" aria-required="true"/>
-          <label className="sr-only" htmlFor="cloud">Primary Cloud Provider</label>
-          <select id="cloud" name="cloud" required className="rounded-lg bg-white/10 px-4 py-3 outline-none focus:bg-white focus:text-slate-900" aria-required="true">
-            <option value="">Primary Cloud Provider</option>
-            <option>AWS</option><option>Azure</option><option>GCP</option><option>Multi-cloud</option>
-          </select>
-          <label className="flex items-start gap-2 text-sm text-slate-300"><input type="checkbox" required className="mt-1"/> I agree to be contacted about this inquiry. See our <a href="/privacy" className="underline">Privacy Policy</a>.</label>
-          <button className="mt-2 rounded-xl bg-emerald-500 px-5 py-3 font-semibold">Schedule Consultation</button>
-        </form>
-      </section>
+      <section className="bg-gradient-to-b from-emerald-50/40 to-white">
+  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    {/* Ring card centered */}
+    <div className="mx-auto max-w-3xl">
+      <HeroValueIndex />
+    </div>
+
+    {/* Headline + copy */}
+    <h1 className="mt-8 text-center text-3xl sm:text-4xl md:text-[40px] font-extrabold leading-tight tracking-tight text-slate-900">
+      Predictable, Efficient Cloud
+      <span className="block">— With Zyorix</span>
+    </h1>
+
+    <p className="mx-auto mt-4 max-w-3xl text-center text-slate-600">
+      We align compute with business outcomes so you get <strong>more value per £</strong> —
+      not just lower bills, but predictable budgets, accountable allocation, and resilient services.
+    </p>
+
+    {/* KPI chips */}
+    <div className="mx-auto mt-6 grid max-w-4xl grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="rounded-xl border border-slate-200 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+        <div className="text-xs uppercase tracking-wide text-slate-500">Predictable</div>
+        <div className="mt-1 text-2xl font-bold text-emerald-700">±5–10%</div>
+        <div className="text-[11px] text-slate-500">Forecast variance</div>
+      </div>
+
+      <div className="rounded-xl border border-slate-200 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+        <div className="text-xs uppercase tracking-wide text-slate-500">Allocated</div>
+        <div className="mt-1 text-2xl font-bold text-emerald-700">90–95%</div>
+        <div className="text-[11px] text-slate-500">Allocation &amp; tagging</div>
+      </div>
+
+      <div className="rounded-xl border border-slate-200 bg-white/70 p-4 text-center shadow-sm backdrop-blur">
+        <div className="text-xs uppercase tracking-wide text-slate-500">Resilient</div>
+        <div className="mt-1 text-2xl font-bold text-emerald-700">99.9%+</div>
+        <div className="text-[11px] text-slate-500">Availability &amp; SLO</div>
+      </div>
+    </div>
+
+    {/* Footnote */}
+    <p className="mx-auto mt-5 max-w-2xl text-center text-[12px] leading-snug text-slate-500">
+      Value per £ = outcomes (throughput or revenue proxies) divided by cloud spend.
+    </p>
+  </div>
+</section>
     </main>
   );
 }
@@ -94,6 +121,8 @@ const trackCta = (name: 'book' | 'learn_more'): void => {
   try { window.gtag?.('event', 'cta_click', { location: 'hero', cta: name }); } catch {}
 };
 // === end analytics helper ===
+
+
 
 
 
