@@ -12,12 +12,6 @@ export default function Home() {
       <HeroValueIndex />
 
       {/* Trust strip */}
-      <div className="text-center text-sm text-slate-600">Trusted by engineering, finance, and platform teams</div>
-      <div className="mt-4 flex flex-wrap gap-8 justify-center opacity-80">
-        {home.trust.map((src, i) => (
-          <Image key={i} src={src} alt="Client logo placeholder" width={120} height={28} />
-        ))}
-      </div>
 
       {/* Services */}
       <section id="services" className="grid gap-6 md:grid-cols-4">
@@ -100,5 +94,6 @@ const trackCta = (name: 'book' | 'learn_more'): void => {
   try { window.gtag?.('event', 'cta_click', { location: 'hero', cta: name }); } catch {}
 };
 // === end analytics helper ===
+
 
 
