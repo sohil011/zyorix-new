@@ -208,7 +208,7 @@ export default function Services() {
                           Quick Wins
                         </div>
                         <div className="text-sm text-slate-600">
-                          Implement 10-15% savings in first 30 days
+                          Identify 10-15% optimisable spend in first 30 days
                         </div>
                       </div>
                     </div>
@@ -475,11 +475,11 @@ export default function Services() {
               },
               {
                 q: "What if we're multi-cloud (AWS + Azure + GCP)?",
-                a: "Perfect. We specialise in multi-cloud FinOps. The Sprint covers all three major cloud providers and builds a unified cost allocation and governance framework across your entire cloud estate.",
+                a: "Perfect. We specialise in multi-cloud FinOps. The Sprint covers all three major cloud providers and builds a unified cost allocation and governance playbook across your entire cloud estate.",
               },
               {
                 q: "How is this different from hiring a FinOps engineer?",
-                a: "You get immediate certified expertise (FOCP + FOCUS Analyst) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. The Sprint typically pays for itself in 8-12 weeks through savings delivered. Plus, you avoid the risk of a bad hire.",
+                a: "You get immediate certified expertise (FOCP + FOCUS Analyst) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. The Sprint typically pays for itself in 8-12 weeks based on client results.* Plus, you avoid the risk of a bad hire.",
               },
               {
                 q: "Do we need to buy any SaaS tools?",
@@ -491,15 +491,15 @@ export default function Services() {
               },
               {
                 q: "How quickly will we see ROI?",
-                a: "Most clients see first quick wins (10-15% savings) within 30 days, with full 15-35% savings achieved by day 60. If you're spending £50K/month and save 25%, that's £150K annual savings — the Sprint typically costs 10-15% of first-year savings.",
+                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on recent client results. Most engagements identify 15-35% optimisable spend by day 60. Example: £50K/month spend with 25% optimisation = £150K potential annual value.*",
               },
               {
                 q: "What if our cloud architecture is complex?",
-                a: "Complex architectures often have the most savings potential. We've worked with microservices, Kubernetes, serverless, data pipelines, and hybrid environments. Our FOCP certification ensures we understand the technical nuances that impact cost.",
+                a: "Complex architectures often have the most optimisation potential. We've worked with microservices, Kubernetes, serverless, data pipelines, and hybrid environments. Our FOCP certification ensures we understand the technical nuances that impact cost.",
               },
               {
-                q: "Can you guarantee the 15-35% savings?",
-                a: "While we can't guarantee a specific % (every environment is unique), 15-35% is the typical range we see for startups/SMEs with basic or no FinOps practices. If you've already done significant optimisation, savings may be lower but still meaningful. We'll give you an honest assessment in the discovery call.",
+                q: "What results should we expect?",
+                a: "15-35% is the typical range of optimisable spend identified for startups/SMEs with basic or no FinOps practices (observed across recent Sprint projects, 2024-25). If you've already done significant optimisation, the percentage may be lower but still meaningful. We'll give you an honest assessment in the discovery call.*",
               },
               {
                 q: "Is the Sprint remote or on-site?",
@@ -583,6 +583,17 @@ export default function Services() {
               <span>UK-based support</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ========================================
+          FOOTNOTE DISCLAIMER
+          ======================================== */}
+      <section className="py-8 bg-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs text-slate-500 text-center">
+            * Based on Zyorix Sprint methodology applied to UK startups and SMEs, 2024-25. Results vary depending on environment complexity, current FinOps maturity, and implementation.
+          </p>
         </div>
       </section>
     </main>

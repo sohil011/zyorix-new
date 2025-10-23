@@ -47,7 +47,7 @@ export default function Home() {
               </p>
 
               <p className="text-base text-slate-600 mb-8">
-                Typical results: <strong>15-35% savings</strong> within 60 days. No SaaS tools, no long-term contracts — just expert-led optimisation across AWS, Azure, and GCP.
+                Clients typically identify <strong>15-35% optimisable spend</strong> within 60 days.* No SaaS tools, no long-term contracts — just expert-led optimisation across AWS, Azure, and GCP.
               </p>
 
               {/* Dual CTAs */}
@@ -73,11 +73,11 @@ export default function Home() {
               <div className="flex flex-wrap gap-6 text-sm text-slate-600">
                 <div className="flex items-center gap-2">
                   <TrendingDown className="w-5 h-5 text-emerald-600" />
-                  <span>15-35% cost reduction</span>
+                  <span>15-35% optimisable spend identified</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Target className="w-5 h-5 text-emerald-600" />
-                  <span>60-day results guarantee</span>
+                  <span>60-day outcome checkpoint</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <BarChart3 className="w-5 h-5 text-emerald-600" />
@@ -150,7 +150,7 @@ export default function Home() {
 
                 <div className="mt-8 p-4 rounded-xl bg-slate-50 border border-slate-200">
                   <p className="text-sm text-slate-700 text-center">
-                    <strong>Deliverable:</strong> Full FinOps roadmap, cost allocation model, and ongoing governance framework
+                    <strong>Deliverable:</strong> Full FinOps roadmap, cost allocation model, and governance playbook
                   </p>
                 </div>
               </div>
@@ -171,10 +171,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "15-35%", label: "Average savings within 60 days" },
-              { value: "±5-10%", label: "Forecast accuracy achieved" },
-              { value: "90-95%", label: "Cost allocation success rate" },
-              { value: "6 weeks", label: "Time to full visibility" },
+              { value: "15-35%", label: "Optimisable spend identified within 60 days*" },
+              { value: "±5-10%", label: "Forecast accuracy typically observed" },
+              { value: "90-95%", label: "Tag coverage in recent Sprint projects" },
+              { value: "6 weeks", label: "Full visibility typically achieved" },
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -452,7 +452,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600" />
-                <span>Results within 60 days</span>
+                <span>Measurable outcomes within 60 days</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600" />
@@ -486,11 +486,11 @@ export default function Home() {
               },
               {
                 q: "What if I'm on multiple clouds?",
-                a: "Perfect. The Sprint covers AWS, Azure, and GCP — we'll build a unified cost allocation and governance framework across all three.",
+                a: "Perfect. The Sprint covers AWS, Azure, and GCP — we'll build a unified cost allocation and governance playbook across all three.",
               },
               {
                 q: "How quickly will I see ROI?",
-                a: "Most clients see first quick wins (10-15% savings) within 30 days, with full 15-35% savings achieved by day 60. Typical engagement pays for itself in 8-12 weeks.",
+                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on recent client results. Most engagements identify 15-35% optimisable spend by day 60.*",
               },
             ].map((faq, i) => (
               <motion.div
@@ -517,6 +517,17 @@ export default function Home() {
               View All FAQs →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* ========================================
+          FOOTNOTE DISCLAIMER
+          ======================================== */}
+      <section className="py-8 bg-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs text-slate-500 text-center">
+            * Based on Zyorix Sprint methodology applied to UK startups and SMEs, 2024-25. Results vary depending on environment complexity, current FinOps maturity, and implementation.
+          </p>
         </div>
       </section>
     </main>

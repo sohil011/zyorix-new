@@ -381,27 +381,27 @@ export default function Pricing() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Calculate Your Potential Savings
+              Calculate Your Potential Value
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              If you're spending <strong>£50K/month</strong> on cloud and save
-              just <strong>25%</strong>:
+              Example: If you're spending <strong>£50K/month</strong> on cloud and identify
+              just <strong>25% optimisable spend</strong>:*
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {[
                 {
-                  label: "Monthly Savings",
+                  label: "Monthly Value",
                   value: "£12,500",
-                  desc: "£50K × 25% reduction",
+                  desc: "£50K × 25% optimisation",
                 },
                 {
-                  label: "Annual Savings",
+                  label: "Annual Value",
                   value: "£150K",
-                  desc: "First-year total",
+                  desc: "First-year potential",
                 },
                 {
-                  label: "Sprint ROI",
+                  label: "Potential ROI",
                   value: "12x",
                   desc: "£150K ÷ £12.5K investment",
                 },
@@ -426,8 +426,8 @@ export default function Pricing() {
             </div>
 
             <p className="text-sm text-slate-500 mb-6">
-              These are illustrative figures. Your actual savings depend on your
-              current FinOps maturity, architecture, and usage patterns.
+              These are illustrative figures. Your actual results depend on your
+              current FinOps maturity, architecture, and usage patterns.*
             </p>
 
             <Link
@@ -468,8 +468,8 @@ export default function Pricing() {
                 a: "Yes. Standard terms: 50% upfront, 50% at Week 3 kickoff. Other arrangements available for UK companies upon request.",
               },
               {
-                q: "Do you offer refunds if savings don't materialise?",
-                a: "We don't offer refunds, but we do offer a transparent discovery call where we'll audit your environment and give you an honest projection of savings potential. If we don't think you'll see ROI, we'll tell you upfront.",
+                q: "What if the Sprint doesn't deliver value?",
+                a: "We offer a transparent discovery call where we'll audit your environment and give you an honest projection of optimisation potential. If we don't think you'll see meaningful ROI, we'll tell you upfront — before you commit. Our track record shows most clients identify 15-35% optimisable spend.*",
               },
               {
                 q: "Is there a discount for multiple Sprints (different teams/accounts)?",
@@ -537,6 +537,17 @@ export default function Pricing() {
               <span>Custom ROI estimate</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ========================================
+          FOOTNOTE DISCLAIMER
+          ======================================== */}
+      <section className="py-8 bg-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-xs text-slate-500 text-center">
+            * Based on Zyorix Sprint methodology applied to UK startups and SMEs, 2024-25. Results vary depending on environment complexity, current FinOps maturity, and implementation.
+          </p>
         </div>
       </section>
     </main>

@@ -24,16 +24,16 @@ export default function CaseStudies() {
       solution:
         "Implemented the 6-Week FinOps Sprint™ focusing on immediate waste reduction (idle dev/staging resources), reserved instance strategy for predictable workloads, and cost allocation by team/feature.",
       results: {
-        headline: "28% monthly savings",
+        headline: "28% cost reduction",
         metrics: [
           { label: "Monthly Spend", before: "£45,000", after: "£32,400", change: "−£12,600" },
-          { label: "Annual Savings", value: "£151,200" },
+          { label: "Annual Value", value: "£151,200" },
           { label: "Forecast Accuracy", value: "±6% variance" },
           { label: "Cost Allocation", value: "92% tagged" },
           { label: "ROI Payback", value: "8 weeks" },
         ],
         testimonial:
-          "Zyorix helped us get control of our cloud spend in weeks, not months. The visibility alone was worth the investment, but the 28% savings made it a no-brainer.",
+          "Zyorix helped us get control of our cloud spend in weeks, not months. The visibility alone was worth the investment, but the 28% cost reduction made it a no-brainer.",
         author: "CTO, Fintech Startup",
       },
       deliverables: [
@@ -57,7 +57,7 @@ export default function CaseStudies() {
         headline: "35% cost reduction",
         metrics: [
           { label: "Monthly Spend", before: "£68,000", after: "£44,200", change: "−£23,800" },
-          { label: "Annual Savings", value: "£285,600" },
+          { label: "Annual Value", value: "£285,600" },
           { label: "Multi-Cloud Allocation", value: "95% accuracy" },
           { label: "Team Accountability", value: "100% showback coverage" },
           { label: "ROI Payback", value: "5 weeks" },
@@ -87,9 +87,9 @@ export default function CaseStudies() {
         headline: "31% waste eliminated",
         metrics: [
           { label: "Monthly Spend", before: "£92,000", after: "£63,480", change: "−£28,520" },
-          { label: "Annual Savings", value: "£342,240" },
+          { label: "Annual Value", value: "£342,240" },
           { label: "Orphaned Resources", value: "£31K/month eliminated" },
-          { label: "Rightsizing Impact", value: "18% compute savings" },
+          { label: "Rightsizing Impact", value: "18% compute optimisation" },
           { label: "ROI Payback", value: "4 weeks" },
         ],
         testimonial:
@@ -126,13 +126,13 @@ export default function CaseStudies() {
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
               See how the 6-Week FinOps Sprint™ helped startups and SMEs cut cloud
-              waste, build predictable budgets, and achieve 15-35% cost savings
+              waste, build predictable budgets, and identify 15-35% optimisable spend*
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
               {[
-                { value: "15-35%", label: "Average savings" },
-                { value: "60 days", label: "Time to full ROI" },
+                { value: "15-35%", label: "Optimisable spend identified*" },
+                { value: "6-8 weeks", label: "Typical ROI realisation*" },
                 { value: "90-95%", label: "Cost allocation accuracy" },
               ].map((stat, i) => (
                 <div key={i} className="px-6">
@@ -278,6 +278,13 @@ export default function CaseStudies() {
               </div>
             </motion.div>
           ))}
+
+          {/* Verification Disclaimer */}
+          <div className="text-center mt-12 pt-8 border-t border-slate-200">
+            <p className="text-sm text-slate-500">
+              * Results verified via client sign-off using Zyorix Methodology. Based on Sprint projects delivered to UK startups and SMEs, 2024-25.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -315,7 +322,7 @@ export default function CaseStudies() {
               {
                 metric: "4-12 weeks",
                 label: "ROI Payback",
-                desc: "Time to recover Sprint investment through savings",
+                desc: "Time to recover Sprint investment (based on client results)",
               },
               {
                 metric: "23-34%",
