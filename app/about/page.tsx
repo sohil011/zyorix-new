@@ -298,11 +298,11 @@ export default function About() {
               },
               {
                 title: "Quick Wins + Long-Term Strategy",
-                desc: "Implement immediate savings in weeks 1-2, then build sustainable governance that prevents waste from creeping back in.",
+                desc: "Implement immediate optimisations in weeks 1-2, then build sustainable governance that prevents waste from creeping back in.",
               },
               {
                 title: "Transparent ROI",
-                desc: "You'll see exactly what you're getting: savings projections, time-to-value estimates, and payback periods. No vague consulting promises.",
+                desc: "You'll see exactly what you're getting: optimisation projections, time-to-value estimates, and payback timelines. No vague consulting promises.",
               },
             ].map((item, i) => (
               <motion.div

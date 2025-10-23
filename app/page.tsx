@@ -174,7 +174,7 @@ export default function Home() {
               { value: "15-35%", label: "Optimisable spend identified within 60 days*" },
               { value: "±5-10%", label: "Forecast accuracy typically observed" },
               { value: "90-95%", label: "Tag coverage in recent Sprint projects" },
-              { value: "6 weeks", label: "Full visibility typically achieved" },
+              { value: "6 weeks", label: "Full cost visibility typically achieved" },
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -286,7 +286,7 @@ export default function Home() {
               {
                 icon: "⚡",
                 title: "Fast Time-to-Value",
-                desc: "See first savings within 30 days, full ROI within 60 — no 6-month ramp-up like hiring",
+                desc: "See first measurable optimisation within 30 days; ROI typically realised in 6–8 weeks — no 6-month ramp-up like hiring",
                 highlight: "<30 days to quick wins",
               },
               {
@@ -341,8 +341,8 @@ export default function Home() {
                 detail: "Reduced AWS spend from £45K to £32K/month through rightsizing and reserved instance strategy",
                 metric1: "£156K",
                 metric1Label: "Annual savings",
-                metric2: "8 weeks",
-                metric2Label: "Payback period",
+                metric2: "≈ 8 weeks",
+                metric2Label: "Time to payback",
               },
               {
                 company: "E-commerce Platform",

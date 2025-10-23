@@ -77,7 +77,7 @@ export default function Pricing() {
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold">
                   <TrendingUp className="w-4 h-4" />
-                  Typical ROI: 8-12 weeks payback period
+                  Typical ROI: ≈ 8-12 weeks to payback
                 </div>
               </div>
 
