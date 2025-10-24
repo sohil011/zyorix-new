@@ -43,7 +43,7 @@ export default function Home() {
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-700 mb-4 font-medium leading-relaxed">
-                Specialised FinOps consultancy helping UK startups and SMEs cut 15–35% cloud waste and build cost predictability in 6 weeks.
+                Specialised FinOps consultancy helping UK startups and SMEs cut 15–35% cloud waste — and build cost predictability in 6 weeks.
               </p>
 
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -86,8 +86,13 @@ export default function Home() {
               </div>
 
               {/* Trust phrase */}
-              <p className="text-sm text-slate-500 italic">
+              <p className="text-sm text-slate-500 italic mb-4">
                 Trusted by UK startups and scaleups across Fintech, SaaS, and Retail Tech sectors. Built on FinOps Foundation best practices (FOCP & FOCUS 1.2 aligned).
+              </p>
+
+              {/* Reassurance line */}
+              <p className="text-sm text-emerald-700 font-semibold">
+                We'll only recommend a Sprint if your data shows clear ROI potential.
               </p>
             </motion.div>
 
@@ -171,7 +176,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <p className="text-sm font-semibold text-slate-500 uppercase tracking-wide">
-              Proven Results for UK Startups & SMEs
+              Benchmarked Results for UK Startups & SMEs
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
