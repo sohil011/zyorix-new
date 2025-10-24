@@ -38,16 +38,16 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                Stop Guessing Your{" "}
-                <span className="gradient-text">Cloud Spend</span>
+                Transform Cloud Chaos into{" "}
+                <span className="gradient-text">Predictable Value</span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-700 mb-4 leading-relaxed">
-                Transform unpredictable cloud costs into predictable, efficient value with the <strong>6-Week FinOps Sprint™</strong> — built for UK startups and SMEs.
+              <p className="text-xl sm:text-2xl text-slate-700 mb-4 font-medium leading-relaxed">
+                Specialised FinOps consultancy helping UK startups and SMEs cut 15–35% cloud waste and build cost predictability in 6 weeks.
               </p>
 
-              <p className="text-base text-slate-600 mb-8">
-                Clients typically identify <strong>15-35% optimisable spend</strong> within 60 days.* No SaaS tools, no long-term contracts — just expert-led optimisation across AWS, Azure, and GCP.
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                The <strong>6-Week FinOps Sprint™</strong> eliminates cloud waste, builds accurate forecasts, and embeds governance — without expensive SaaS tools or long-term contracts.
               </p>
 
               {/* Dual CTAs */}
@@ -61,16 +61,16 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
-                  href="/services"
+                  href="/case-studies"
                   className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"
                 >
-                  How It Works
-                  <Calendar className="w-5 h-5" />
+                  View Typical Savings
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
 
               {/* Social proof stats */}
-              <div className="flex flex-wrap gap-6 text-sm text-slate-600">
+              <div className="flex flex-wrap gap-6 text-sm text-slate-600 mb-6">
                 <div className="flex items-center gap-2">
                   <TrendingDown className="w-5 h-5 text-emerald-600" />
                   <span>15-35% optimisable spend identified</span>
@@ -84,6 +84,11 @@ export default function Home() {
                   <span>Full visibility & control</span>
                 </div>
               </div>
+
+              {/* Trust phrase */}
+              <p className="text-sm text-slate-500 italic">
+                Trusted by UK startups and scaleups across Fintech, SaaS, and Retail Tech sectors. Built on FinOps Foundation best practices (FOCP & FOCUS 1.2 aligned).
+              </p>
             </motion.div>
 
             {/* RIGHT: 6-Week Sprint Visual */}
@@ -496,6 +501,10 @@ export default function Home() {
               {
                 q: "How quickly will I see ROI?",
                 a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects. Most engagements identify 15-35% optimisable spend by day 60.*",
+              },
+              {
+                q: "Can you work alongside our existing FinOps team?",
+                a: "Yes — we act as your FinOps partner, augmenting existing teams with specialist expertise and delivering the 6-Week Sprint methodology alongside your internal resources. Perfect for teams needing focused support on specific initiatives.",
               },
             ].map((faq, i) => (
               <motion.div

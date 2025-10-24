@@ -43,13 +43,11 @@ export default function Services() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Predictable Cloud in <span className="gradient-text">42 Days</span>
+              The 6-Week FinOps Sprint™ — Predictable Cloud in <span className="gradient-text">42 Days</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              A proven 3-phase methodology to eliminate cloud waste, build
-              accurate forecasts, and establish sustainable governance — without
-              expensive SaaS tools or long-term contracts.
+              Eliminate cloud waste, forecast with ±5-10% accuracy, and embed governance — without SaaS lock-ins or 6-month ramp-ups.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -62,10 +60,11 @@ export default function Services() {
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/pricing"
+                href="/case-studies"
                 className="btn-secondary inline-flex items-center gap-2 px-8 py-4 text-lg"
               >
-                View Pricing
+                View Typical Savings
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </motion.div>
@@ -111,9 +110,13 @@ export default function Services() {
                   </div>
                 </div>
 
-                <p className="text-lg text-slate-600 mb-6">
+                <p className="text-lg text-slate-600 mb-2">
                   Establish full visibility into your cloud spend, architecture,
                   and waste opportunities. You can't optimise what you can't see.
+                </p>
+
+                <p className="text-sm text-emerald-700 font-semibold mb-6 italic">
+                  Average UK clients uncover 10–15% waste in the first 30 days.
                 </p>
 
                 <div className="space-y-4">
@@ -255,9 +258,13 @@ export default function Services() {
                   </div>
                 </div>
 
-                <p className="text-lg text-slate-600 mb-6">
+                <p className="text-lg text-slate-600 mb-2">
                   Execute quick wins and implement long-term optimisation
                   strategies to reduce waste and lock in predictable pricing.
+                </p>
+
+                <p className="text-sm text-amber-700 font-semibold mb-6 italic">
+                  Typical cumulative savings: 15–25% by end of Week 4.
                 </p>
 
                 <div className="space-y-4">
@@ -314,9 +321,13 @@ export default function Services() {
                   </div>
                 </div>
 
-                <p className="text-lg text-slate-600 mb-6">
+                <p className="text-lg text-slate-600 mb-2">
                   Build sustainable governance processes, forecasting models, and
                   team accountability to maintain long-term FinOps maturity.
+                </p>
+
+                <p className="text-sm text-blue-700 font-semibold mb-6 italic">
+                  This final phase turns your FinOps sprint into a lasting operating model.
                 </p>
 
                 <div className="space-y-4">
@@ -403,8 +414,11 @@ export default function Services() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               What You'll Achieve
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-2">
               Typical results after completing the 6-Week FinOps Sprint™
+            </p>
+            <p className="text-sm text-slate-500 italic">
+              These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations.
             </p>
           </div>
 
