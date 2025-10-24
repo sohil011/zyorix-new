@@ -84,6 +84,70 @@
 
 ---
 
+---
+
+## ⚠️ CRITICAL PRE-CLIENT COMPLIANCE UPDATE
+
+**Issue:** Current footer disclaimers on live pages imply completed client projects.
+**Risk:** False advertising if no clients delivered yet.
+**Priority:** **URGENT - Fix before launch**
+
+### Existing Problematic Language:
+
+#### Case Studies Page (HIGHEST RISK):
+- **Current:** "* Based on Sprint projects delivered to UK startups and SMEs, 2024-25."
+- **Problem:** Claims delivered projects that may not exist yet
+- **Location:** `app/case-studies/page.tsx:286`
+
+#### All Other Pages (MEDIUM RISK):
+- **Current:** "* Based on Zyorix Sprint methodology applied to UK startups and SMEs, 2024-25."
+- **Problem:** "Applied to" could imply delivered work
+- **Locations:**
+  - `app/page.tsx:529`
+  - `app/services/page.tsx:595`
+  - `app/pricing/page.tsx:549`
+
+### **REQUIRED SAFE LANGUAGE (Pre-Client Phase):**
+
+**Option 1 (Conservative - Recommended):**
+```
+* These figures represent benchmark averages from FinOps best-practice case studies
+and internal Sprint methodology simulations. Results vary by environment complexity,
+current FinOps maturity, and implementation.
+```
+
+**Option 2 (Moderate):**
+```
+* Based on FinOps Foundation best-practice benchmarks and Zyorix Sprint methodology.
+Results vary by environment complexity, current FinOps maturity, and implementation.
+```
+
+**Option 3 (When you have 1-2 clients):**
+```
+* Based on early Zyorix Sprint projects and FinOps industry benchmarks (2024-25).
+Results vary by environment complexity, current FinOps maturity, and implementation.
+```
+
+### Implementation Checklist:
+- [ ] **Update app/case-studies/page.tsx:285** (HIGHEST URGENCY)
+  - Current: "¹ Client-verified case studies. Results confirmed via client sign-off using Zyorix Methodology."
+  - **Safe Option 1:** "¹ Representative case studies based on FinOps industry benchmarks and Zyorix methodology projections."
+  - **Safe Option 2:** "¹ Benchmark case studies illustrating typical outcomes using FinOps best practices and Zyorix Sprint methodology."
+
+- [ ] **Update app/case-studies/page.tsx:286** (URGENT)
+  - Current: "* Based on Sprint projects delivered to UK startups and SMEs, 2024-25."
+  - Recommended: Use **Option 1** from above (conservative)
+
+- [ ] **Update app/page.tsx:529**
+- [ ] **Update app/services/page.tsx:595**
+- [ ] **Update app/pricing/page.tsx:549**
+
+**Est. Time:** 10 minutes
+**Impact:** Eliminates all false advertising risk
+**Legal Risk if Not Fixed:** HIGH - False claims about client verification
+
+---
+
 ## 📋 SERVICES PAGE IMPROVEMENTS
 
 ### **Priority 1: High-Impact Quick Wins (Est. 25 mins)**
@@ -127,10 +191,11 @@
   - Status: ✅ No change needed
 
 #### 3. "What You'll Achieve" Section
-- [ ] **Add verified savings caption**
-  - Text: "These averages are based on verified 2024-25 Zyorix Sprint projects."
+- [ ] **Add benchmark methodology caption**
+  - Text: "These figures represent benchmark averages from FinOps best-practice case studies and internal simulations."
   - Location: Above metrics in achievement section
   - Impact: +3% trust signal
+  - **Note:** Pre-client safe language - no false claims about completed projects
 
 #### 4. SEO & Metadata (CRITICAL)
 - [ ] **Add SEO title tag**
