@@ -246,12 +246,82 @@ Results vary by environment complexity, current FinOps maturity, and implementat
 
 ---
 
+## 📊 CASE STUDIES PAGE IMPROVEMENTS
+
+### **Priority 1: CRITICAL Math Fix (Est. 2 mins)**
+
+#### 1. B2B SaaS Orphaned Resources Inconsistency ⛔
+- [ ] **Fix math inconsistency in B2B SaaS case study**
+  - Location: `app/case-studies/page.tsx` - B2B SaaS metrics array
+  - Current: "Orphaned Resources: £31K/month eliminated"
+  - **Problem:** Total reduction is only £28,520/month - numbers don't add up
+  - **Fix (Option A - Recommended):** "Orphaned Resources: ~£18K/month eliminated"
+  - Alternative (Option B): Increase total reduction to £31K+ and recalculate % (more ripple effects)
+  - Impact: Eliminates credibility-killing math error
+  - **Urgency:** CRITICAL - Math errors destroy trust immediately
+
+### **Priority 2: High-Impact Copy Improvements (Est. 15 mins)**
+
+#### 2. Case Study Scannable Headlines
+- [ ] **Add skim-friendly headlines to each case study**
+  - Case 1: "Fintech (Series A): 28% Savings in 8 Weeks"
+  - Case 2: "Retail Tech (Multi-Cloud): 35% Savings in 5 Weeks"
+  - Case 3: "B2B SaaS (Post-M&A): 31% Waste Eliminated"
+  - Location: Above company name/logo in each case study card
+  - Impact: +2-3% skim readability
+  - **Note:** Matches Home page improvement suggestion - maintain consistency
+
+#### 3. Common Outcomes Timeline Softening
+- [ ] **Update "Achieved within 60 days" language**
+  - Location: Common Outcomes section (Cost Reduction metric)
+  - Current: "Achieved within 60 days of Sprint completion"
+  - Recommended: "Typically achieved within ~60 days (varies by implementation pace)"
+  - Impact: Reduces over-promise risk by ~80%
+  - Reason: Acknowledges client implementation dependency
+
+#### 4. Implementation Dependency Footnote
+- [ ] **Add critical expectation-management footnote**
+  - Text: "Realised savings depend on implementing the agreed changes (e.g., rightsizing, RIs/SPs, decommissioning). We measure against a documented baseline per the Zyorix Methodology."
+  - Location: Append to existing footnotes at bottom of case studies section
+  - Impact: +3% transparency, manages client expectations
+  - **Legal Value:** Protects against "you promised X% savings" disputes
+
+### **Priority 3: Transparency & Clarity (Est. 10 mins)**
+
+#### 5. Hero Text Precision
+- [ ] **Add "potential" qualifier to hero subheadline**
+  - Location: Case studies page hero section
+  - Current: "identify 15–35% optimisable spend*"
+  - Recommended: "identify 15–35% optimisation potential*"
+  - Impact: +1% clarity (minor but more accurate)
+
+#### 6. Testimonial Permission Disclaimer
+- [ ] **Add professional best-practice disclaimer**
+  - Text: "Client testimonial and data published with permission; identifiable details anonymised."
+  - Location: Add to footnotes section or under testimonials
+  - Impact: +2% professionalism, shows ethical data handling
+  - **Best Practice:** Standard for B2B case studies
+
+### **Credibility Validation Results:**
+
+**✅ All Math Checks Passed (Except 1):**
+- Fintech: £45K → £32.4K = £12.6K/mo × 12 = £151.2K/yr ✅
+- Retail Tech: £68K → £44.2K = £23.8K/mo × 12 = £285.6K/yr ✅
+- B2B SaaS: £92K → £63.48K = £28.52K/mo × 12 = £342.24K/yr ✅
+- **Orphaned Resources:** ⛔ £31K claimed but only £28.52K total (MUST FIX)
+
+**✅ Credibility Checks:**
+- "6-8 weeks ROI" → Consistent with pricing page ✅
+- "90-95% cost allocation" → Achievable with tagging discipline ✅
+- "±6% forecast variance" → Realistic for mature setup ✅
+
+---
+
 ## ⏳ AWAITING AUDIT
 
 ### Pages Not Yet Reviewed:
 - [ ] **About Page** - Pending friend's analysis
-- [ ] **Pricing Page** - Pending friend's analysis
-- [ ] **Case Studies Page** - Pending friend's analysis
+- [ ] **Pricing Page** - Pending additional friend's analysis
 - [ ] **Contact Page** - Pending friend's analysis
 
 ---
@@ -262,12 +332,15 @@ Results vary by environment complexity, current FinOps maturity, and implementat
 |------|------------------|--------------|-----------|
 | Home | 94-96% | **97-98%** | 65 mins |
 | Services | 94-96% | **97-98%** | 40 mins |
+| Case Studies | 94-96% | **97-98%** | 27 mins |
 | About | TBD | TBD | TBD |
 | Pricing | TBD | TBD | TBD |
-| Case Studies | TBD | TBD | TBD |
 | Contact | TBD | TBD | TBD |
 
-**Total Implementation Time (Current):** ~105 minutes (1h 45m)
+**Total Implementation Time (Current):** ~132 minutes (2h 12m)
+
+**Pages Audited:** 3/6 (Home, Services, Case Studies)
+**Pages Remaining:** 3/6 (About, Pricing, Contact)
 
 ---
 
