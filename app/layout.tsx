@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Zyorix | UK FinOps Consultancy – Cut Cloud Costs 15–35% in 6 Weeks",
-  description: "Zyorix helps UK startups & SMEs cut 15–35% cloud waste and achieve predictable spend with the 6-Week FinOps Sprint™.",
+  title: "Zyorix | UK FinOps Consultancy – Identify 15–35% Cloud Savings in 6 Weeks",
+  description: "Zyorix helps UK startups & SMEs typically identify 15–35% optimisable spend and achieve predictable cloud costs with the 6-Week FinOps Sprint™.",
   metadataBase: new URL("https://www.zyorix.com"),
   openGraph: {
-    title: "Zyorix | UK FinOps Consultancy – Cut Cloud Costs 15–35% in 6 Weeks",
-    description: "Zyorix helps UK startups & SMEs cut 15–35% cloud waste and achieve predictable spend with the 6-Week FinOps Sprint™.",
+    title: "Zyorix | UK FinOps Consultancy – Identify 15–35% Cloud Savings in 6 Weeks",
+    description: "Zyorix helps UK startups & SMEs typically identify 15–35% optimisable spend and achieve predictable cloud costs with the 6-Week FinOps Sprint™.",
     images: ["/img/og/social-share.webp"],
     url: "https://www.zyorix.com",
     siteName: "Zyorix"
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Zyorix | UK FinOps Consultancy",
-    description: "Cut 15–35% cloud waste with the 6-Week FinOps Sprint™."
+    description: "Typically identify 15–35% optimisable spend with the 6-Week FinOps Sprint™."
   }
 };
 

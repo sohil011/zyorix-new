@@ -40,6 +40,20 @@ export default function Pricing() {
       </section>
 
       {/* ========================================
+          UPFRONT DISCLAIMER
+          ======================================== */}
+      <section className="py-8 bg-slate-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="p-4 rounded-xl bg-amber-50 border-2 border-amber-200">
+            <p className="text-sm text-amber-900 font-semibold">
+              <span className="text-base mr-2">⚠️</span>
+              <strong>Important:</strong> ROI projections and optimisation ranges shown (15–35%, 8-12 week payback) are based on FinOps Foundation benchmarks and Zyorix Sprint methodology simulations, not verified client engagements. Actual results vary by environment complexity and implementation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================================
           PRIMARY OFFERING - 6-Week Sprint
           ======================================== */}
       <section className="py-20 bg-white">
@@ -77,7 +91,7 @@ export default function Pricing() {
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold">
                   <TrendingUp className="w-4 h-4" />
-                  Typical ROI: ≈ 8-12 weeks to payback
+                  Representative ROI range (modelled): ≈ 8-12 weeks to payback
                 </div>
               </div>
 
@@ -381,11 +395,11 @@ export default function Pricing() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Calculate Your Potential Value
+              Illustrative ROI Example (Modelled)
             </h2>
             <p className="text-lg text-slate-600 mb-8">
               Example: If you're spending <strong>£50K/month</strong> on cloud and identify
-              just <strong>25% optimisable spend</strong>:*
+              just <strong>≈25% optimisable spend</strong>:*
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -425,10 +439,11 @@ export default function Pricing() {
               ))}
             </div>
 
-            <p className="text-sm text-slate-500 mb-6">
-              These are illustrative figures. Your actual results depend on your
-              current FinOps maturity, architecture, and usage patterns.*
-            </p>
+            <div className="p-4 rounded-xl bg-amber-50 border-2 border-amber-200 mb-6">
+              <p className="text-sm text-amber-900 font-semibold">
+                <strong>Important:</strong> This is an illustrative example based on typical FinOps benchmarks. Your actual results depend on your current FinOps maturity, architecture, and usage patterns. We measure against a documented baseline per the Zyorix Methodology.*
+              </p>
+            </div>
 
             <Link
               href="/contact"

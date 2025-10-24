@@ -43,7 +43,7 @@ export default function Home() {
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-700 mb-4 font-medium leading-relaxed">
-                Specialised FinOps consultancy helping UK startups and SMEs cut 15–35% cloud waste — and build cost predictability in 6 weeks.
+                Specialised FinOps consultancy helping UK startups and SMEs typically identify 15–35% optimisable spend — and build cost predictability in 6 weeks.
               </p>
 
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -181,10 +181,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "15-35%", label: "Optimisable spend identified within 60 days*" },
-              { value: "±5-10%", label: "Forecast accuracy typically observed" },
-              { value: "90-95%", label: "Tag coverage in recent Sprint projects" },
-              { value: "6 weeks", label: "Full cost visibility typically achieved" },
+              { value: "≈15-35%", label: "Optimisable spend identified (modelled)*" },
+              { value: "±5-10%", label: "Forecast accuracy (benchmark-based)" },
+              { value: "≈90-95%", label: "Tag coverage (typical Sprint outcome)" },
+              { value: "≈6 weeks", label: "Full cost visibility (modelled)" },
             ].map((stat, i) => (
               <motion.div
                 key={i}
@@ -214,6 +214,13 @@ export default function Home() {
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Everything you need to transform cloud chaos into predictable, optimised spend — no SaaS bloat, no vendor lock-in
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto mb-8 p-4 rounded-xl bg-amber-50 border-2 border-amber-200">
+            <p className="text-sm text-amber-900 font-semibold">
+              <span className="text-base mr-2">⚠️</span>
+              <strong>Important:</strong> Outcome ranges shown (15–35% optimisation, ±5–10% forecast accuracy) are based on FinOps Foundation benchmarks and Zyorix Sprint methodology simulations, not verified client engagements. Results vary by environment.
             </p>
           </div>
 
@@ -296,7 +303,7 @@ export default function Home() {
               {
                 icon: "⚡",
                 title: "Fast Time-to-Value",
-                desc: "See first measurable optimisation within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects — no 6-month ramp-up like hiring",
+                desc: "See first measurable optimisation within 30 days; ROI typically realised in 6–8 weeks based on FinOps benchmark data and Sprint methodology simulations — no 6-month ramp-up like hiring",
                 highlight: "<30 days to quick wins",
               },
               {
@@ -335,10 +342,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Real Results from Real UK Startups
+              Representative Outcomes for UK Startups
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              See how we've helped companies like yours cut cloud waste and build predictable budgets
+              See how the 6-Week FinOps Sprint™ typically identifies savings opportunities — using benchmark-based modelled scenarios aligned to FinOps best practices
             </p>
           </div>
 
@@ -505,7 +512,7 @@ export default function Home() {
               },
               {
                 q: "How quickly will I see ROI?",
-                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects. Most engagements identify 15-35% optimisable spend by day 60.*",
+                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on FinOps benchmarks. Most modelled scenarios identify 15-35% optimisable spend by day 60.*",
               },
               {
                 q: "Can you work alongside our existing FinOps team?",
