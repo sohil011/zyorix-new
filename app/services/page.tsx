@@ -116,7 +116,7 @@ export default function Services() {
                 </p>
 
                 <p className="text-sm text-emerald-700 font-semibold mb-6 italic">
-                  Average UK clients uncover 10–15% waste in the first 30 days.
+                  Typical UK environments reveal 10–15% optimisation potential within the first 30 days (based on FinOps benchmarks).
                 </p>
 
                 <div className="space-y-4">
@@ -414,11 +414,8 @@ export default function Services() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               What You'll Achieve
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-2">
-              Typical results after completing the 6-Week FinOps Sprint™
-            </p>
-            <p className="text-sm text-slate-500 italic">
-              These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations.
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-4">
+              Benchmarked outcomes from FinOps best-practice projects and Zyorix internal simulations show the following ranges:
             </p>
           </div>
 
