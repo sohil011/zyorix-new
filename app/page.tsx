@@ -335,6 +335,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
+                headline: "Fintech (Series A): 28% Savings in 8 Weeks",
                 company: "SaaS Startup (Series A)",
                 industry: "Fintech",
                 result: "28% monthly savings¹",
@@ -345,6 +346,7 @@ export default function Home() {
                 metric2Label: "Time to payback",
               },
               {
+                headline: "Retail Tech (Multi-Cloud): 35% Savings in 5 Weeks",
                 company: "E-commerce Platform",
                 industry: "Retail Tech",
                 result: "35% cost reduction¹",
@@ -365,10 +367,13 @@ export default function Home() {
               >
                 <div className="flex justify-between items-start mb-4">
                   <div>
+                    <div className="text-lg font-bold text-white mb-2">
+                      {study.headline}
+                    </div>
                     <div className="text-sm text-slate-400 mb-1">
                       {study.industry}
                     </div>
-                    <h3 className="text-xl font-bold text-white">
+                    <h3 className="text-base font-semibold text-slate-300">
                       {study.company}
                     </h3>
                   </div>

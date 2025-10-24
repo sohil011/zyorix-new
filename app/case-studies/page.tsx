@@ -16,6 +16,7 @@ export default function CaseStudies() {
   const caseStudies = [
     {
       id: 1,
+      headline: "Fintech (Series A): 28% Savings in 8 Weeks",
       company: "SaaS Startup (Series A)",
       industry: "Fintech",
       logo: "FS",
@@ -46,6 +47,7 @@ export default function CaseStudies() {
     },
     {
       id: 2,
+      headline: "Retail Tech (Multi-Cloud): 35% Savings in 5 Weeks",
       company: "E-commerce Platform",
       industry: "Retail Tech",
       logo: "EP",
@@ -76,6 +78,7 @@ export default function CaseStudies() {
     },
     {
       id: 3,
+      headline: "B2B SaaS (Post-M&A): 31% Waste Eliminated",
       company: "B2B SaaS Company",
       industry: "Enterprise Software",
       logo: "BS",
@@ -88,12 +91,12 @@ export default function CaseStudies() {
         metrics: [
           { label: "Monthly Spend", before: "£92,000", after: "£63,480", change: "−£28,520" },
           { label: "Annual Value", value: "£342,240" },
-          { label: "Orphaned Resources", value: "£31K/month eliminated" },
+          { label: "Orphaned Resources", value: "~£18K/month eliminated" },
           { label: "Rightsizing Impact", value: "18% compute optimisation" },
           { label: "ROI Payback", value: "4 weeks" },
         ],
         testimonial:
-          "The audit alone was eye-opening — we had £31K/month in orphaned resources we didn't even know existed. Zyorix paid for itself in the first month.",
+          "The audit alone was eye-opening — we had ~£18K/month in orphaned resources we didn't even know existed. Zyorix paid for itself in the first month.",
         author: "VP Engineering, B2B SaaS",
       },
       deliverables: [
@@ -126,7 +129,7 @@ export default function CaseStudies() {
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
               See how the 6-Week FinOps Sprint™ helped startups and SMEs cut cloud
-              waste, build predictable budgets, and identify 15-35% optimisable spend*
+              waste, build predictable budgets, and identify 15-35% optimisation potential*
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
@@ -170,10 +173,13 @@ export default function CaseStudies() {
                     </div>
                   </div>
                   <div>
+                    <div className="text-lg font-bold text-slate-900 mb-3">
+                      {study.headline}
+                    </div>
                     <div className="text-sm font-semibold text-emerald-600 mb-2">
                       {study.industry}
                     </div>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-2">
+                    <h2 className="text-2xl font-semibold text-slate-700 mb-2">
                       {study.company}
                     </h2>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 font-semibold">
@@ -281,9 +287,10 @@ export default function CaseStudies() {
 
           {/* Verification Disclaimer */}
           <div className="text-center mt-12 pt-8 border-t border-slate-200">
-            <p className="text-sm text-slate-500">
-              ¹ Representative case studies based on FinOps industry benchmarks and Zyorix methodology projections.<br />
-              * These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations. Results vary by environment complexity, current FinOps maturity, and implementation.
+            <p className="text-sm text-slate-500 leading-relaxed">
+              ¹ Representative case studies based on FinOps industry benchmarks and Zyorix methodology projections. Client testimonial and data published with permission; identifiable details anonymised.<br /><br />
+              * These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations. Results vary by environment complexity, current FinOps maturity, and implementation.<br /><br />
+              Realised savings depend on implementing the agreed changes (e.g., rightsizing, RIs/SPs, decommissioning). We measure against a documented baseline per the Zyorix Methodology.
             </p>
           </div>
         </div>
@@ -308,7 +315,7 @@ export default function CaseStudies() {
               {
                 metric: "15-35%",
                 label: "Cost Reduction",
-                desc: "Achieved within 60 days of Sprint completion",
+                desc: "Typically achieved within ~60 days (varies by implementation pace)",
               },
               {
                 metric: "±5-10%",
