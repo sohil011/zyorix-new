@@ -393,6 +393,9 @@ export default function Home() {
                     <h3 className="text-base font-semibold text-slate-300">
                       {study.company}
                     </h3>
+                    <div className="text-xs text-slate-400 italic mt-1">
+                      Representative scenario (modelled)
+                    </div>
                   </div>
                   <div className="text-2xl font-bold text-emerald-400">
                     {study.result}
@@ -551,9 +554,13 @@ export default function Home() {
           ======================================== */}
       <section className="py-8 bg-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-xs text-slate-500 text-center">
-            * These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations. Results vary by environment complexity, current FinOps maturity, and implementation.
-          </p>
+          <div className="max-w-4xl mx-auto p-6 rounded-xl bg-amber-50 border border-amber-200">
+            <p className="text-sm text-slate-700 leading-relaxed text-center">
+              <strong className="text-amber-900">Important Disclosure:</strong><br/><br/>
+              * Outcome ranges (15–35% optimisation, ±5–10% forecast accuracy, 90-95% cost allocation) are representative and modelled, based on FinOps Foundation benchmarks and Zyorix Sprint methodology simulations, not verified client engagements.<br/><br/>
+              Realised outcomes depend on the changes you implement and your current FinOps maturity. We measure against a documented baseline per the Zyorix Methodology.
+            </p>
+          </div>
         </div>
       </section>
     </main>
