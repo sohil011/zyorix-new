@@ -592,7 +592,7 @@ export default function Services() {
       <section className="py-8 bg-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <p className="text-xs text-slate-500 text-center">
-            * Based on Zyorix Sprint methodology applied to UK startups and SMEs, 2024-25. Results vary depending on environment complexity, current FinOps maturity, and implementation.
+            * These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations. Results vary by environment complexity, current FinOps maturity, and implementation.
           </p>
         </div>
       </section>

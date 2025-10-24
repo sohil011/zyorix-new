@@ -282,8 +282,8 @@ export default function CaseStudies() {
           {/* Verification Disclaimer */}
           <div className="text-center mt-12 pt-8 border-t border-slate-200">
             <p className="text-sm text-slate-500">
-              ¹ Client-verified case studies. Results confirmed via client sign-off using Zyorix Methodology.<br />
-              * Based on Sprint projects delivered to UK startups and SMEs, 2024-25.
+              ¹ Representative case studies based on FinOps industry benchmarks and Zyorix methodology projections.<br />
+              * These figures represent benchmark averages from FinOps best-practice case studies and internal Sprint methodology simulations. Results vary by environment complexity, current FinOps maturity, and implementation.
             </p>
           </div>
         </div>
