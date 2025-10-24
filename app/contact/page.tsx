@@ -31,8 +31,9 @@ export default function Contact() {
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              30-minute consultation with Sohil to audit your cloud spend, identify
-              quick wins, and see if the 6-Week FinOps Sprint™ is right for you
+              30-minute consultation with Sohil to review your cloud spend, highlight
+              potential optimisation areas, and assess whether the 6-Week FinOps
+              Sprint™ could benefit your environment
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 text-sm text-slate-600 mb-8">
@@ -238,8 +239,12 @@ export default function Contact() {
                 </h2>
                 <p className="text-slate-600 leading-relaxed mb-6">
                   Schedule a 30-minute call with Sohil to discuss your cloud spend
-                  challenges. We'll identify quick wins and give you an honest
-                  assessment of potential savings.
+                  challenges. We'll highlight potential optimisation areas and give you
+                  an honest assessment of potential savings.
+                </p>
+                <p className="text-sm text-slate-500 italic">
+                  We'll only recommend a Sprint if our assessment shows clear ROI
+                  potential for your environment.
                 </p>
               </div>
 
@@ -324,9 +329,9 @@ export default function Contact() {
                   <ol className="space-y-3">
                     {[
                       "We'll review your cloud environment and spend patterns",
-                      "Identify 2-3 immediate quick wins (10-15% savings potential)",
+                      "Identify 2-3 areas with potential 10–15% optimisation opportunity based on FinOps benchmarks",
                       "Discuss whether the 6-Week FinOps Sprint™ is a good fit",
-                      "Provide a custom ROI projection and engagement proposal",
+                      "Provide a data-driven ROI projection and transparent proposal if the Sprint appears viable",
                     ].map((step, i) => (
                       <li key={i} className="flex gap-3">
                         <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center">
@@ -354,8 +359,8 @@ export default function Contact() {
             Not Ready to Book Yet?
           </h2>
           <p className="text-lg text-slate-300 mb-8">
-            Learn more about the 6-Week FinOps Sprint™ and see how we've helped
-            UK startups cut cloud costs
+            Learn more about the 6-Week FinOps Sprint™ and see how FinOps
+            best-practice projects have reduced cloud waste for UK startups
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

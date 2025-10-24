@@ -118,6 +118,18 @@ export default function About() {
                         </div>
                       </div>
                     </div>
+
+                    <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100">
+                      <Award className="w-6 h-6 text-emerald-600 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-slate-900 text-sm">
+                          FinOps Foundation Member
+                        </div>
+                        <div className="text-xs text-slate-500">
+                          Community contributor
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -160,6 +172,12 @@ export default function About() {
                       took me years to learn: how to see your spend clearly,
                       optimise fast, and build governance that lasts.
                     </p>
+                    <p>
+                      <strong className="text-slate-900">
+                        Zyorix focuses exclusively on the startup and SME segment,
+                        where agility and ROI matter most.
+                      </strong>
+                    </p>
                   </div>
                 </div>
 
@@ -169,15 +187,15 @@ export default function About() {
                       15-35%
                     </div>
                     <div className="text-sm text-slate-600">
-                      Average client savings
+                      Typical optimisation potential*
                     </div>
                   </div>
                   <div>
                     <div className="text-3xl font-bold text-emerald-600 mb-1">
-                      60 days
+                      ≈60 days
                     </div>
                     <div className="text-sm text-slate-600">
-                      Time to full ROI
+                      Typical ROI realisation window*
                     </div>
                   </div>
                   <div>
@@ -197,6 +215,11 @@ export default function About() {
                     </div>
                   </div>
                 </div>
+
+                <p className="text-xs text-slate-500 pt-4 border-t border-slate-200">
+                  * Based on FinOps best-practice benchmarks and Zyorix Sprint
+                  methodology simulations. For typical mid-stage environments.
+                </p>
 
                 <div className="pt-6">
                   <Link
@@ -290,7 +313,7 @@ export default function About() {
             {[
               {
                 title: "Data-Driven, Not Opinion-Driven",
-                desc: "Every recommendation is backed by your actual spend data, industry benchmarks, and FinOps best practices — not gut feelings or vendor sales pitches.",
+                desc: "Every recommendation is backed by your actual spend data, industry benchmarks, and FinOps best practices — not gut feelings or vendor sales pitches. All recommendations are benchmarked against FinOps Foundation best practices (FOCP & FOCUS 1.2 frameworks).",
               },
               {
                 title: "Collaborative, Not Directive",
@@ -393,6 +416,10 @@ export default function About() {
               </strong>{" "}
               — we'll give you an honest assessment.
             </p>
+            <p className="text-slate-300 mb-6 text-sm italic">
+              If your spend is below £5K/month, we'll advise free best-next-steps
+              rather than oversell you a Sprint.
+            </p>
             <Link
               href="/contact"
               onClick={() => trackCta("book_consultation", "about_cta")}
@@ -430,8 +457,8 @@ export default function About() {
               },
               {
                 icon: <TrendingUp className="w-8 h-8" />,
-                label: "Proven Results",
-                desc: "15-35% savings within 60 days",
+                label: "Benchmarked Results",
+                desc: "15-35% optimisation potential typically identified within 60 days",
               },
               {
                 icon: <Shield className="w-8 h-8" />,
@@ -504,6 +531,11 @@ export default function About() {
               <span>Quick wins identified</span>
             </div>
           </div>
+
+          <p className="text-sm text-slate-500 mt-6 italic max-w-lg mx-auto">
+            We'll only recommend a Sprint if our assessment shows clear ROI
+            potential for your specific environment.
+          </p>
         </div>
       </section>
     </main>
