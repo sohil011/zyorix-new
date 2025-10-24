@@ -491,7 +491,7 @@ export default function Services() {
               },
               {
                 q: "How quickly will we see ROI?",
-                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on recent client results. Most engagements identify 15-35% optimisable spend by day 60. Example: £50K/month spend with 25% optimisation = £150K potential annual value.*",
+                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects. Most engagements identify 15-35% optimisable spend by day 60. Example: £50K/month spend with 25% optimisation = £150K potential annual value.*",
               },
               {
                 q: "What if our cloud architecture is complex?",

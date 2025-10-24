@@ -24,7 +24,7 @@ export default function CaseStudies() {
       solution:
         "Implemented the 6-Week FinOps Sprint™ focusing on immediate waste reduction (idle dev/staging resources), reserved instance strategy for predictable workloads, and cost allocation by team/feature.",
       results: {
-        headline: "28% cost reduction",
+        headline: "28% cost reduction¹",
         metrics: [
           { label: "Monthly Spend", before: "£45,000", after: "£32,400", change: "−£12,600" },
           { label: "Annual Value", value: "£151,200" },
@@ -54,7 +54,7 @@ export default function CaseStudies() {
       solution:
         "Created unified cost allocation framework across AWS + GCP, implemented showback reports for each product team, optimised data transfer costs between clouds, and established governance policies to prevent future waste.",
       results: {
-        headline: "35% cost reduction",
+        headline: "35% cost reduction¹",
         metrics: [
           { label: "Monthly Spend", before: "£68,000", after: "£44,200", change: "−£23,800" },
           { label: "Annual Value", value: "£285,600" },
@@ -84,7 +84,7 @@ export default function CaseStudies() {
       solution:
         "Consolidated AWS accounts using AWS Organizations, identified and decommissioned orphaned resources (34% of total spend), implemented rightsizing for over-provisioned RDS and EC2 instances, and created cost-aware culture through training.",
       results: {
-        headline: "31% waste eliminated",
+        headline: "31% waste eliminated¹",
         metrics: [
           { label: "Monthly Spend", before: "£92,000", after: "£63,480", change: "−£28,520" },
           { label: "Annual Value", value: "£342,240" },
@@ -282,7 +282,8 @@ export default function CaseStudies() {
           {/* Verification Disclaimer */}
           <div className="text-center mt-12 pt-8 border-t border-slate-200">
             <p className="text-sm text-slate-500">
-              * Results verified via client sign-off using Zyorix Methodology. Based on Sprint projects delivered to UK startups and SMEs, 2024-25.
+              ¹ Client-verified case studies. Results confirmed via client sign-off using Zyorix Methodology.<br />
+              * Based on Sprint projects delivered to UK startups and SMEs, 2024-25.
             </p>
           </div>
         </div>

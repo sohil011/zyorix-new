@@ -286,7 +286,7 @@ export default function Home() {
               {
                 icon: "⚡",
                 title: "Fast Time-to-Value",
-                desc: "See first measurable optimisation within 30 days; ROI typically realised in 6–8 weeks — no 6-month ramp-up like hiring",
+                desc: "See first measurable optimisation within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects — no 6-month ramp-up like hiring",
                 highlight: "<30 days to quick wins",
               },
               {
@@ -337,7 +337,7 @@ export default function Home() {
               {
                 company: "SaaS Startup (Series A)",
                 industry: "Fintech",
-                result: "28% monthly savings",
+                result: "28% monthly savings¹",
                 detail: "Reduced AWS spend from £45K to £32K/month through rightsizing and reserved instance strategy",
                 metric1: "£156K",
                 metric1Label: "Annual savings",
@@ -347,7 +347,7 @@ export default function Home() {
               {
                 company: "E-commerce Platform",
                 industry: "Retail Tech",
-                result: "35% cost reduction",
+                result: "35% cost reduction¹",
                 detail: "Optimised multi-cloud (AWS + GCP) architecture and implemented automated scaling policies",
                 metric1: "£210K",
                 metric1Label: "Yearly savings",
@@ -478,7 +478,7 @@ export default function Home() {
             {[
               {
                 q: "How is this different from hiring a FinOps engineer?",
-                a: "You get immediate expertise (FOCP certified) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. Sprint cost is typically 10-15% of first-year savings.",
+                a: "You get immediate expertise (FOCP certified) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. Sprint cost is typically 10-15% of first-year savings (on average, engagements completed in 2024–25).*",
               },
               {
                 q: "Do I need to buy another SaaS tool?",
@@ -490,7 +490,7 @@ export default function Home() {
               },
               {
                 q: "How quickly will I see ROI?",
-                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on recent client results. Most engagements identify 15-35% optimisable spend by day 60.*",
+                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects. Most engagements identify 15-35% optimisable spend by day 60.*",
               },
             ].map((faq, i) => (
               <motion.div
