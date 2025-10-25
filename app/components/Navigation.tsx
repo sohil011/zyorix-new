@@ -86,13 +86,14 @@ export default function Navigation() {
         <>
           {/* Backdrop */}
           <div
-            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden z-40"
+            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden"
             onClick={closeMobileMenu}
             aria-hidden="true"
+            style={{ zIndex: 9998 }}
           />
 
           {/* Mobile Menu Panel */}
-          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl md:hidden z-50 overflow-y-auto">
+          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-red-500 shadow-2xl md:hidden overflow-y-auto" style={{ zIndex: 9999, border: '5px solid yellow' }}>
             <nav className="flex flex-col p-6 space-y-1">
               <Link
                 href="/services"
