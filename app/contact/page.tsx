@@ -27,13 +27,17 @@ export default function Contact() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Book Your <span className="gradient-text">Free Discovery Call</span>
+              Book Your <span className="gradient-text">Free FinOps Discovery Call</span> — Identify 10–15% Savings Opportunities in 30 Min
             </h1>
 
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-4 leading-relaxed">
               30-minute consultation with Sohil to review your cloud spend, highlight
               potential optimisation areas, and assess whether the 6-Week FinOps
               Sprint™ could benefit your environment
+            </p>
+
+            <p className="text-sm text-emerald-700 font-semibold mb-8">
+              Used by UK startups spending £10K–£250K/month on AWS, Azure & GCP.
             </p>
 
             <div className="flex flex-wrap justify-center gap-8 text-sm text-slate-600 mb-8">

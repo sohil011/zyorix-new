@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Zyorix | UK FinOps Consultancy – FOCP Certified Independent Experts",
-  description: "Meet the team behind Zyorix — FOCP certified FinOps practitioners helping UK startups and SMEs transform cloud chaos into predictable value.",
+  title: "Independent FinOps Consultancy UK | About Zyorix – FOCP Certified Cloud Cost Experts",
+  description: "Zyorix is a UK-based FinOps consultancy helping startups and SMEs reduce 15–35% of cloud waste and build predictable cloud spend through the 6-Week FinOps Sprint™.",
   openGraph: {
-    title: "About Zyorix | UK FinOps Consultancy",
-    description: "Meet the team behind Zyorix — FOCP certified FinOps practitioners helping UK startups and SMEs transform cloud chaos into predictable value.",
+    title: "Independent FinOps Consultancy UK | About Zyorix – FOCP Certified Cloud Cost Experts",
+    description: "Zyorix is a UK-based FinOps consultancy helping startups and SMEs reduce 15–35% of cloud waste and build predictable cloud spend through the 6-Week FinOps Sprint™.",
   },
 };
 

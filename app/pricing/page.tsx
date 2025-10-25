@@ -35,6 +35,26 @@ export default function Pricing() {
               Fixed-price engagement with clear ROI projections — no hourly rates,
               no scope creep, no surprises
             </p>
+
+            <div className="flex gap-4 justify-center mt-6">
+              <Link
+                href="/contact"
+                onClick={() => trackCta("book_consultation", "pricing_hero")}
+                className="btn-primary inline-flex items-center gap-2"
+                aria-label="Get custom FinOps Sprint estimate from Zyorix"
+              >
+                Get Custom Estimate
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link
+                href="#roi-calculator"
+                className="btn-secondary inline-flex items-center gap-2"
+                aria-label="View illustrative ROI example calculator"
+              >
+                See ROI Example
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -87,7 +107,7 @@ export default function Pricing() {
                   <div className="text-5xl font-bold text-emerald-600">
                     £12,500
                   </div>
-                  <div className="text-slate-600">fixed price</div>
+                  <div className="text-slate-600">fixed price (GBP)</div>
                 </div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold">
                   <TrendingUp className="w-4 h-4" />
@@ -131,6 +151,7 @@ export default function Pricing() {
                     trackCta("book_consultation", "pricing_sprint")
                   }
                   className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg flex-1"
+                  aria-label="Book free 30-minute FinOps discovery call with Zyorix"
                 >
                   Book Free Discovery Call
                   <Calendar className="w-5 h-5" />
@@ -138,6 +159,7 @@ export default function Pricing() {
                 <Link
                   href="/services"
                   className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 text-lg flex-1"
+                  aria-label="View full FinOps Sprint service details"
                 >
                   View Sprint Details
                   <ArrowRight className="w-5 h-5" />
@@ -391,7 +413,7 @@ export default function Pricing() {
       {/* ========================================
           ROI CALCULATOR PREVIEW
           ======================================== */}
-      <section className="py-20 bg-slate-50">
+      <section id="roi-calculator" className="py-20 bg-slate-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -449,6 +471,7 @@ export default function Pricing() {
               href="/contact"
               onClick={() => trackCta("book_consultation", "pricing_roi")}
               className="btn-primary inline-flex items-center gap-2"
+              aria-label="Get your custom FinOps Sprint ROI estimate"
             >
               Get Your Custom Estimate
               <ArrowRight className="w-5 h-5" />
@@ -490,6 +513,10 @@ export default function Pricing() {
                 q: "Is there a discount for multiple Sprints (different teams/accounts)?",
                 a: "Yes. For multi-Sprint engagements or enterprise-scale clients, contact us for volume pricing.",
               },
+              {
+                q: "How do you ensure ROI measurement transparency?",
+                a: "Each Sprint includes a documented baseline (captured in weeks 1-2) and a post-Sprint measurement (30-60 days after implementation), signed off by the client — following the Zyorix Verified Savings Methodology™. We measure against your actual cloud bill, not estimates.",
+              },
             ].map((faq, i) => (
               <motion.div
                 key={i}
@@ -525,6 +552,7 @@ export default function Pricing() {
               href="/contact"
               onClick={() => trackCta("book_consultation", "pricing_cta")}
               className="btn-primary pulse-cta inline-flex items-center gap-2 px-8 py-4 text-lg"
+              aria-label="Book free 30-minute FinOps discovery call with Zyorix"
             >
               Book Free Discovery Call
               <Calendar className="w-5 h-5" />
@@ -532,6 +560,7 @@ export default function Pricing() {
             <Link
               href="/case-studies"
               className="btn-secondary inline-flex items-center gap-2 px-8 py-4 text-lg"
+              aria-label="View representative FinOps case study outcomes"
             >
               View Case Studies
               <ArrowRight className="w-5 h-5" />

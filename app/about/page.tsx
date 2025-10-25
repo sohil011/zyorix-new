@@ -43,9 +43,10 @@ export default function About() {
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Zyorix is a UK-based FinOps consultancy helping startups and SMEs
-              transform unpredictable cloud costs into predictable, efficient
-              value — without vendor conflicts or expensive SaaS tools.
+              Zyorix is a UK-based FinOps consultancy helping startups and SMEs turn
+              unpredictable cloud costs into predictable value — typically identifying
+              15–35% optimisation potential within 60 days, without SaaS lock-ins or
+              vendor bias.
             </p>
           </motion.div>
         </div>
@@ -79,11 +80,20 @@ export default function About() {
                     <p className="text-lg text-emerald-600 font-semibold mb-4">
                       Founder & FinOps Practitioner
                     </p>
+                    <p className="text-sm text-slate-600 mb-4 italic">
+                      Sohil has helped multiple UK tech startups streamline AWS and Azure
+                      spend through applied FinOps frameworks.
+                    </p>
                   </div>
 
                   {/* Certifications */}
                   <div className="space-y-3">
-                    <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100">
+                    <a
+                      href="https://www.finops.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100 hover:border-emerald-300 transition-colors"
+                    >
                       <Award className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 text-sm">
@@ -93,9 +103,14 @@ export default function About() {
                           FinOps Foundation
                         </div>
                       </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100">
+                    <a
+                      href="https://focus.finops.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100 hover:border-emerald-300 transition-colors"
+                    >
                       <Award className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 text-sm">
@@ -105,7 +120,7 @@ export default function About() {
                           FinOps Open Cost & Usage Specification
                         </div>
                       </div>
-                    </div>
+                    </a>
 
                     <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100">
                       <Globe className="w-6 h-6 text-emerald-600 flex-shrink-0" />
@@ -119,7 +134,12 @@ export default function About() {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100">
+                    <a
+                      href="https://www.finops.org"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-white border border-emerald-100 hover:border-emerald-300 transition-colors"
+                    >
                       <Award className="w-6 h-6 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 text-sm">
@@ -129,7 +149,7 @@ export default function About() {
                           Community contributor
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
