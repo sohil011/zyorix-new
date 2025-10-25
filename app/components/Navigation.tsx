@@ -31,6 +31,7 @@ export default function Navigation() {
   }, [mobileMenuOpen]);
 
   return (
+    <>
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
         {/* Logo */}
@@ -75,19 +76,20 @@ export default function Navigation() {
           )}
         </button>
       </nav>
+    </header>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - OUTSIDE header for proper z-index */}
       {mobileMenuOpen && (
         <>
           {/* Backdrop */}
           <div
-            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden z-[58]"
+            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden z-50"
             onClick={closeMobileMenu}
             aria-hidden="true"
           />
 
           {/* Mobile Menu Panel */}
-          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl md:hidden z-[59] overflow-y-auto">
+          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl md:hidden z-50 overflow-y-auto">
             <nav className="flex flex-col p-6 space-y-1">
               <Link
                 href="/services"
@@ -167,6 +169,6 @@ export default function Navigation() {
           </div>
         </>
       )}
-    </header>
+    </>
   );
 }
