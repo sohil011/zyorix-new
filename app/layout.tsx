@@ -1,7 +1,7 @@
-﻿import "./globals.css";
+import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
+import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
   title: "Zyorix | UK FinOps Consultancy – Identify 15–35% Cloud Savings in 6 Weeks",
@@ -27,29 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <a href="#main" className="sr-only focus:not-sr-only p-2 bg-white">Skip to content</a>
 
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-
-  
-          <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-<Link href="/" className="flex items-center gap-2 md:gap-3">
-  <Image src="/logo-full.svg" width={240} height={60} className="h-12 md:h-14 w-auto" alt="Zyorix Logo" priority/>
-</Link>
-  
-            
-
-            <div className="hidden md:flex items-center gap-6 text-sm">
-              <Link href="/services">Services</Link>
-              <Link href="/pricing">Pricing</Link>
-              <Link href="/case-studies">Case Studies</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/about">About</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/contact" className="ml-2 rounded-xl bg-emerald-500 text-white px-3 py-1.5 font-semibold">
-                Book Consultation
-              </Link>
-            </div>
-          </nav>
-        </header>
+        <Navigation />
 
         <main id="main" className="flex-1">{children}</main>
 
