@@ -360,6 +360,46 @@ textarea.success {
 }
 
 /* =========================================
+   MOBILE NAVIGATION
+   ========================================= */
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Mobile menu slide-in animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile menu backdrop fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animations to mobile menu */
+.mobile-menu-panel {
+  animation: slideInRight var(--transition-base) ease-out;
+}
+
+.mobile-menu-backdrop {
+  animation: fadeIn var(--transition-fast) ease-out;
+}
+
+/* =========================================
    PRINT STYLES
    ========================================= */
 
