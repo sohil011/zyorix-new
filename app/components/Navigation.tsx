@@ -9,7 +9,11 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    console.log("Toggle clicked! Current state:", mobileMenuOpen);
+    const newState = !mobileMenuOpen;
+    console.log("New state will be:", newState);
+    setMobileMenuOpen(newState);
+    alert(`Menu is now: ${newState ? 'OPEN' : 'CLOSED'}`);
   };
 
   const closeMobileMenu = () => {
@@ -64,9 +68,10 @@ export default function Navigation() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMobileMenu}
-          className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+          className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors bg-emerald-100 border-2 border-emerald-500"
           aria-label="Toggle mobile menu"
           aria-expanded={mobileMenuOpen}
+          style={{ zIndex: 9999 }}
         >
           {mobileMenuOpen ? (
             <X className="w-6 h-6 text-slate-900" />
