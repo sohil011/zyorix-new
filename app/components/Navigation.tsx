@@ -9,11 +9,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    console.log("Toggle clicked! Current state:", mobileMenuOpen);
-    const newState = !mobileMenuOpen;
-    console.log("New state will be:", newState);
-    setMobileMenuOpen(newState);
-    alert(`Menu is now: ${newState ? 'OPEN' : 'CLOSED'}`);
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   const closeMobileMenu = () => {
@@ -68,10 +64,9 @@ export default function Navigation() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMobileMenu}
-          className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors bg-emerald-100 border-2 border-emerald-500"
+          className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors relative z-[60]"
           aria-label="Toggle mobile menu"
           aria-expanded={mobileMenuOpen}
-          style={{ zIndex: 9999 }}
         >
           {mobileMenuOpen ? (
             <X className="w-6 h-6 text-slate-900" />
@@ -86,14 +81,13 @@ export default function Navigation() {
         <>
           {/* Backdrop */}
           <div
-            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden"
+            className="mobile-menu-backdrop fixed inset-0 bg-slate-900/20 backdrop-blur-sm md:hidden z-[58]"
             onClick={closeMobileMenu}
             aria-hidden="true"
-            style={{ zIndex: 9998 }}
           />
 
           {/* Mobile Menu Panel */}
-          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-red-500 shadow-2xl md:hidden overflow-y-auto" style={{ zIndex: 9999, border: '5px solid yellow' }}>
+          <div className="mobile-menu-panel fixed top-14 right-0 bottom-0 w-full max-w-sm bg-white shadow-2xl md:hidden z-[59] overflow-y-auto">
             <nav className="flex flex-col p-6 space-y-1">
               <Link
                 href="/services"
