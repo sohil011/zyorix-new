@@ -50,7 +50,7 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/services">Services</Link>
           <Link href="/pricing">Pricing</Link>
-          <Link href="/case-studies">Case Studies</Link>
+          <Link href="/labs">Labs & Demos</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
@@ -106,11 +106,11 @@ export default function Navigation() {
                 Pricing
               </Link>
               <Link
-                href="/case-studies"
+                href="/labs"
                 onClick={closeMobileMenu}
                 className="px-4 py-3 text-base font-medium text-slate-900 hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors"
               >
-                Case Studies
+                Labs & Demos
               </Link>
               <Link
                 href="/blog"
