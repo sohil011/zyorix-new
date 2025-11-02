@@ -4,20 +4,20 @@ import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Zyorix | UK FinOps Consultancy – Identify 15–35% Cloud Savings in 6 Weeks",
-  description: "Zyorix helps UK startups & SMEs typically identify 15–35% optimisable spend and achieve predictable cloud costs with the 6-Week FinOps Sprint™.",
+  title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks (UK)",
+  description: "Independent FinOps consultancy and lab validating enterprise-grade cost governance, optimisation, and forecasting models. FOCP + FOCUS certified.",
   metadataBase: new URL("https://www.zyorix.com"),
   openGraph: {
-    title: "Zyorix | UK FinOps Consultancy – Identify 15–35% Cloud Savings in 6 Weeks",
-    description: "Zyorix helps UK startups & SMEs typically identify 15–35% optimisable spend and achieve predictable cloud costs with the 6-Week FinOps Sprint™.",
+    title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks (UK)",
+    description: "Independent FinOps consultancy and lab validating enterprise-grade cost governance, optimisation, and forecasting models. FOCP + FOCUS certified.",
     images: ["/img/og/social-share.webp"],
     url: "https://www.zyorix.com",
     siteName: "Zyorix"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zyorix | UK FinOps Consultancy",
-    description: "Typically identify 15–35% optimisable spend with the 6-Week FinOps Sprint™."
+    title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks",
+    description: "Lab-validated FinOps frameworks designed to help organisations target 15–35% cost optimisation."
   }
 };
 
@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <div className="font-semibold mb-2">Resources</div>
               <ul className="space-y-1">
-                <li><Link href="/case-studies">Case Studies</Link></li>
+                <li><Link href="/labs">Labs & Demos</Link></li>
                 <li><Link href="/pricing">Pricing</Link></li>
               </ul>
             </div>
@@ -64,8 +64,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </ul>
             </div>
           </div>
-          <div className="text-center text-xs text-slate-500 pb-6">
-            &copy; {new Date().getFullYear()} Zyorix.com. All rights reserved.
+          <div className="border-t border-slate-200 mt-8 pt-6">
+            <p className="text-center text-xs text-slate-500 max-w-3xl mx-auto mb-4">
+              Zyorix operates as an independent consultancy and FinOps lab. No claims of prior enterprise delivery; frameworks are validated in lab settings.
+            </p>
+            <div className="text-center text-xs text-slate-500">
+              &copy; {new Date().getFullYear()} Zyorix.com. All rights reserved.
+            </div>
           </div>
         </footer>
       </body>
