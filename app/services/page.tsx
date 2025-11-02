@@ -38,16 +38,16 @@ export default function Services() {
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-emerald-100 border border-emerald-200">
               <Calendar className="w-4 h-4 text-emerald-700" />
               <span className="text-sm font-semibold text-emerald-700">
-                The 6-Week FinOps Sprint™
+                6-Week FinOps Sprint™ — Pilot-Ready Programme
               </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              The 6-Week FinOps Sprint™ — Predictable Cloud in <span className="gradient-text">42 Days</span>
+              6-Week FinOps Sprint™ — <span className="gradient-text">Pilot-Ready Programme</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Eliminate cloud waste, forecast with ±5-10% accuracy, and embed governance — without SaaS lock-ins or 6-month ramp-ups.
+              A structured programme to establish spend visibility, governance guardrails, and actionable reporting. Designed and validated in the Zyorix FinOps Lab, ready to pilot with your teams.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -490,7 +490,7 @@ export default function Services() {
               },
               {
                 q: "How is this different from hiring a FinOps engineer?",
-                a: "You get immediate certified expertise (FOCP + FOCUS Analyst) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. The Sprint typically pays for itself in 8-12 weeks based on client results.* Plus, you avoid the risk of a bad hire.",
+                a: "You get immediate certified expertise (FOCP + FOCUS Analyst) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. The lab-validated Sprint is designed to target ROI within 8-12 weeks based on FinOps benchmarks.* Plus, you avoid the risk of a bad hire.",
               },
               {
                 q: "Do we need to buy any SaaS tools?",
