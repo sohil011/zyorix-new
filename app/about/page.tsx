@@ -38,15 +38,12 @@ export default function About() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Independent FinOps{" "}
+              Independent FinOps <span className="gradient-text">Lab</span>{" "}
               <span className="gradient-text">Built for Startups</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Zyorix is a UK-based FinOps consultancy helping startups and SMEs turn
-              unpredictable cloud costs into predictable value — typically identifying
-              15–35% optimisation potential within 60 days, without SaaS lock-ins or
-              vendor bias.
+              Zyorix is an independent FinOps consultancy and lab led by Sohil Bhayani (FOCP + FOCUS). We prototype and validate FinOps frameworks in controlled lab environments, then help organisations adopt them with confidence.
             </p>
           </motion.div>
         </div>
@@ -81,8 +78,7 @@ export default function About() {
                       Founder & FinOps Practitioner
                     </p>
                     <p className="text-sm text-slate-600 mb-4 italic">
-                      Sohil has helped multiple UK tech startups streamline AWS and Azure
-                      spend through applied FinOps frameworks.
+                      Sohil develops and validates enterprise-grade FinOps frameworks in the Zyorix Lab for adoption by UK tech organisations.
                     </p>
                   </div>
 
@@ -169,7 +165,7 @@ export default function About() {
                   </h3>
                   <div className="space-y-4 text-slate-700 leading-relaxed">
                     <p>
-                      After years working with startups struggling to understand
+                      After years observing startups struggling to understand
                       their cloud bills, I saw the same pattern: unpredictable
                       costs, surprise invoices, and finance teams at odds with
                       engineering.
@@ -181,21 +177,21 @@ export default function About() {
                     </p>
                     <p>
                       <strong className="text-slate-900">
-                        Zyorix was created to give UK startups and SMEs access to
-                        certified FinOps expertise
+                        Zyorix was created as an independent FinOps lab to develop
+                        and validate enterprise-grade frameworks
                       </strong>{" "}
                       — without the enterprise price tag, long-term contracts, or
-                      vendor conflicts.
+                      vendor conflicts. Enterprise-grade structure, validated in lab settings; pilot-ready for adoption.
                     </p>
                     <p>
-                      The <strong>6-Week FinOps Sprint™</strong> delivers what
-                      took me years to learn: how to see your spend clearly,
-                      optimise fast, and build governance that lasts.
+                      The pilot-ready <strong>6-Week FinOps Sprint™</strong> provides
+                      lab-validated frameworks: visibility models, governance playbooks,
+                      and forecasting structures — ready for your environment.
                     </p>
                     <p>
                       <strong className="text-slate-900">
                         Zyorix focuses exclusively on the startup and SME segment,
-                        where agility and ROI matter most.
+                        where agility and transparent ROI matter most.
                       </strong>
                     </p>
                   </div>
@@ -207,7 +203,7 @@ export default function About() {
                       15-35%
                     </div>
                     <div className="text-sm text-slate-600">
-                      Typical optimisation potential*
+                      Target optimisation range (lab benchmarks)*
                     </div>
                   </div>
                   <div>
@@ -215,7 +211,7 @@ export default function About() {
                       ≈60 days
                     </div>
                     <div className="text-sm text-slate-600">
-                      Typical ROI realisation window*
+                      Target ROI window (lab methodology)*
                     </div>
                   </div>
                   <div>
@@ -237,8 +233,8 @@ export default function About() {
                 </div>
 
                 <p className="text-xs text-slate-500 pt-4 border-t border-slate-200">
-                  * Based on FinOps best-practice benchmarks and Zyorix Sprint
-                  methodology simulations. For typical mid-stage environments.
+                  * Based on FinOps benchmarks and lab-validated Sprint
+                  methodology. Target ranges for pilot adoption.
                 </p>
 
                 <div className="pt-6">
@@ -379,7 +375,7 @@ export default function About() {
               Who We Serve Best
             </h2>
             <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-              The ideal Zyorix client profile
+              Organisations best suited for lab-validated FinOps frameworks
             </p>
           </div>
 
