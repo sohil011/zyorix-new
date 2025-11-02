@@ -284,11 +284,11 @@ export default function LabsAndDemos() {
             <p className="text-sm text-slate-700 leading-relaxed">
               <strong className="text-amber-900">Important Disclosure:</strong><br/><br/>
 
-              These scenarios are representative and modelled, based on FinOps benchmarks and Zyorix Sprint methodology simulations, not verified Zyorix client engagements.<br/><br/>
+              These scenarios are lab simulations demonstrating Zyorix Sprint methodology, not client engagements.<br/><br/>
 
-              Realised outcomes depend on the changes you implement (e.g., rightsizing, RIs/SPs/CUDs, decommissioning). We measure against a documented baseline per the Zyorix Methodology.<br/><br/>
+              Lab-validated frameworks designed to help organisations target cost optimisation outcomes (e.g., rightsizing, reserved capacity planning, waste elimination). Baselines documented per the Zyorix Lab Methodology.<br/><br/>
 
-              Results vary by environment complexity, current FinOps maturity, and implementation pace.
+              Actual outcomes depend on your environment complexity, current FinOps maturity, and implementation commitment.
             </p>
           </div>
         </div>
@@ -301,13 +301,13 @@ export default function LabsAndDemos() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-              Typical Outcomes (Benchmark-Based)
+              Target Outcomes (Lab Benchmarks)
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-2">
-              What to expect from the 6-Week FinOps Sprint™
+              What the pilot-ready 6-Week FinOps Sprint™ is designed to help you achieve
             </p>
             <p className="text-sm text-slate-500 italic max-w-2xl mx-auto">
-              Based on FinOps industry benchmarks and Sprint methodology simulations
+              Based on FinOps industry benchmarks and lab-validated Sprint methodology
             </p>
           </div>
 
