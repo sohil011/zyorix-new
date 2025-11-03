@@ -3,11 +3,11 @@
     key: "Content-Security-Policy",
     value: [
       "default-src 'self';",
-      "script-src 'self' 'unsafe-inline' https://assets.calendly.com;",
-      "style-src 'self' 'unsafe-inline' https://assets.calendly.com;",
-      "img-src 'self' data: https://assets.calendly.com;",
-      "connect-src 'self' https://calendly.com https://api.calendly.com https://assets.calendly.com;",
-      "frame-src 'self' https://calendly.com https://assets.calendly.com;",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.cal.com https://cal.com;",
+      "style-src 'self' 'unsafe-inline' https://app.cal.com https://cal.com;",
+      "img-src 'self' data: https://app.cal.com https://cal.com;",
+      "connect-src 'self' https://app.cal.com https://cal.com https://api.cal.com;",
+      "frame-src 'self' https://app.cal.com https://cal.com;",
       "frame-ancestors 'self';"
     ].join(" ")
   }
@@ -33,6 +33,11 @@ const nextConfig = {
         source: '/contact.html',
         destination: '/contact',
         permanent: true,
+      },
+      {
+        source: '/book',
+        destination: 'https://cal.com/zyorix.com/30mins',
+        permanent: false,
       },
     ];
   },
