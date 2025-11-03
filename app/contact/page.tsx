@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Script from "next/script";
 import {
   ArrowRight,
   Mail,
@@ -10,6 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { trackCta } from "../components/trackCta";
+import CalendlyInline from "../components/CalendlyInline";
 
 export default function Contact() {
   return (
@@ -259,17 +259,7 @@ export default function Contact() {
               </div>
 
               {/* Calendly Inline Embed */}
-              <div className="mt-6 mb-8">
-                <div
-                  className="calendly-inline-widget"
-                  data-url="https://calendly.com/sohilbhayani/30min"
-                  style={{minWidth: '320px', height: '700px'}}
-                />
-                <Script
-                  src="https://assets.calendly.com/assets/external/widget.js"
-                  strategy="lazyOnload"
-                />
-              </div>
+              <CalendlyInline url="https://calendly.com/sohilbhayani/30min" height={700} />
 
               {/* Contact Information */}
               <div className="space-y-6">
