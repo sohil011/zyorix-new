@@ -53,6 +53,7 @@ export default function Navigation() {
           <Link href="/labs">Labs & Demos</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/about">About</Link>
+          <Link href="/about-sohil">Portfolio</Link>
           <Link href="/contact">Contact</Link>
           <Link
             href="/contact"
@@ -125,6 +126,13 @@ export default function Navigation() {
                 className="px-4 py-3 text-base font-medium text-slate-900 hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors"
               >
                 About
+              </Link>
+              <Link
+                href="/about-sohil"
+                onClick={closeMobileMenu}
+                className="px-4 py-3 text-base font-medium text-slate-900 hover:bg-emerald-50 hover:text-emerald-600 rounded-lg transition-colors"
+              >
+                Portfolio
               </Link>
               <Link
                 href="/contact"
