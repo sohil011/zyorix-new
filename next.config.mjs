@@ -36,7 +36,12 @@ const nextConfig = {
       },
       {
         source: '/book',
-        destination: 'https://cal.com/zyorix.com/30mins',
+        destination: 'https://cal.com/zyorix.com/30min',
+        permanent: false,
+      },
+      {
+        source: '/30mins',
+        destination: 'https://cal.com/zyorix.com/30min',
         permanent: false,
       },
     ];

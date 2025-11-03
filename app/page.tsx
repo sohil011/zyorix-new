@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, TrendingDown, Target, BarChart3, Calendar } from "lucide-react";
 import Link from "next/link";
 import { trackCta } from "./components/trackCta";
-import CalPopupButton from "./components/CalPopupButton";
+import CalOpenButton from "./components/CalOpenButton";
 
 export default function Home() {
   const handleCtaClick = (location: string) => {
@@ -56,10 +56,10 @@ export default function Home() {
 
               {/* Dual CTAs */}
               <div className="flex flex-col sm:flex-row gap-4 mb-4">
-                <CalPopupButton className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg">
+                <CalOpenButton className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg">
                   Book a 30-min Call
                   <Calendar className="w-5 h-5" />
-                </CalPopupButton>
+                </CalOpenButton>
                 <Link
                   href="/about-sohil"
                   className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"

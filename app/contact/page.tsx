@@ -9,7 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { trackCta } from "../components/trackCta";
-import CalBooking from "../components/CalBooking";
+import CalInline from "../components/CalInline";
 
 export default function Contact() {
   return (
@@ -259,7 +259,7 @@ export default function Contact() {
               </div>
 
               {/* Cal.com Booking Widget */}
-              <CalBooking />
+              <CalInline />
 
               {/* Contact Information */}
               <div className="space-y-6">

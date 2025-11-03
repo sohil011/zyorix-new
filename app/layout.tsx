@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "./components/Navigation";
+import CalScriptLoader from "./components/CalScriptLoader";
+import CalFloating from "./components/CalFloating";
 
 export const metadata: Metadata = {
   title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS Certified) — Zyorix",
@@ -79,6 +81,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        <CalScriptLoader />
+        <CalFloating />
       </body>
     </html>
   );

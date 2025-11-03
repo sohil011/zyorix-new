@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { trackCta } from "../components/trackCta";
-import CalPopupButton from "../components/CalPopupButton";
+import CalOpenButton from "../components/CalOpenButton";
 
 export default function Pricing() {
   return (
@@ -472,10 +472,10 @@ export default function Pricing() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-            <CalPopupButton className="btn-primary pulse-cta inline-flex items-center gap-2 px-8 py-4 text-lg">
+            <CalOpenButton className="btn-primary pulse-cta inline-flex items-center gap-2 px-8 py-4 text-lg">
               Book Free Discovery Call
               <Calendar className="w-5 h-5" />
-            </CalPopupButton>
+            </CalOpenButton>
             <Link
               href="/case-studies"
               className="btn-secondary inline-flex items-center gap-2 px-8 py-4 text-lg"
