@@ -38,15 +38,15 @@ export default function Home() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
-                FinOps, made transparent. <span className="gradient-text">Lab-validated frameworks</span> to help you target 15–35% cost optimisation.
+                FinOps Analyst & Advisor <span className="gradient-text">(FOCP + FOCUS Certified)</span> — Founder of Zyorix.
               </h1>
 
               <p className="text-xl sm:text-2xl text-slate-700 mb-4 font-medium leading-relaxed">
-                I'm Sohil Bhayani (FOCP + FOCUS). Through the Zyorix FinOps Lab I build, test, and refine enterprise-grade FinOps practices you can adopt — from spend visibility to governance and forecasting.
+                Helping organisations turn cloud spend into predictable value through visibility, optimisation, and governance.
               </p>
 
               <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-                The pilot-ready <strong>6-Week FinOps Sprint™</strong> establishes cost visibility, governance guardrails, and actionable reporting — validated in lab settings, ready for your environment.
+                Open to full-time, contract, and consulting FinOps engagements.
               </p>
 
               <p className="text-sm bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 text-amber-900 mb-8">
@@ -60,14 +60,14 @@ export default function Home() {
                   onClick={() => handleCtaClick("hero_primary")}
                   className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"
                 >
-                  Book Free Discovery Call
+                  Work With Me
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
-                  href="/labs"
+                  href="/about-sohil"
                   className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"
                 >
-                  See Lab Demos
+                  View Portfolio
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
