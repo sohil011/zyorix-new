@@ -24,6 +24,15 @@ export default function Services() {
 
   return (
     <main>
+      {/* Subtle banner */}
+      <div className="bg-slate-50 border-b border-slate-200 py-3">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-slate-600 text-center">
+            Consulting is available alongside full-time or contract FinOps roles.
+          </p>
+        </div>
+      </div>
+
       {/* ========================================
           HERO SECTION
           ======================================== */}

@@ -16,6 +16,15 @@ import { trackCta } from "../components/trackCta";
 export default function Pricing() {
   return (
     <main>
+      {/* Subtle banner */}
+      <div className="bg-slate-50 border-b border-slate-200 py-3">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-slate-600 text-center">
+            Pricing is provided for consulting context; Sohil also works directly with FinOps teams in full-time or contract roles.
+          </p>
+        </div>
+      </div>
+
       {/* ========================================
           HERO SECTION
           ======================================== */}

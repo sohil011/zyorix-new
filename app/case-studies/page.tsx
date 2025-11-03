@@ -119,10 +119,14 @@ export default function CaseStudies() {
             transition={{ duration: 0.6 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4">
               Representative Outcomes for{" "}
               <span className="gradient-text">UK Startups</span>
             </h1>
+
+            <p className="text-sm text-slate-500 mb-6 italic">
+              These are benchmark-aligned modelled scenarios to illustrate typical outcomes; results vary.
+            </p>
 
             <p className="text-xl text-slate-600 mb-4 leading-relaxed">
               See how a 6-Week FinOps Sprint™ typically identifies ≈15–35% optimisable spend, improves forecast accuracy, and builds predictable cloud budgets — using benchmark-based modelled scenarios aligned to FinOps best practices.
