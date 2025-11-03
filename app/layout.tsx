@@ -4,20 +4,20 @@ import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS) — Zyorix",
-  description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™.",
+  title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS Certified) — Zyorix",
+  description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations improve spend visibility, forecasting accuracy, and governance through the 6-Week FinOps Sprint™.",
   metadataBase: new URL("https://www.zyorix.com"),
   openGraph: {
-    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS) — Zyorix",
-    description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™.",
+    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS Certified) — Zyorix",
+    description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations improve spend visibility, forecasting accuracy, and governance through the 6-Week FinOps Sprint™.",
     images: ["/img/og/social-share.webp"],
     url: "https://www.zyorix.com",
     siteName: "Zyorix"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS)",
-    description: "Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™."
+    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS Certified)",
+    description: "Helping organisations improve spend visibility, forecasting accuracy, and governance through the 6-Week FinOps Sprint™."
   }
 };
 

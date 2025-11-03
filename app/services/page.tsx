@@ -486,44 +486,36 @@ export default function Services() {
           <div className="space-y-4">
             {[
               {
-                q: "What size of cloud spend is this suitable for?",
-                a: "The Sprint is designed for startups and SMEs spending £5K-£200K/month on cloud infrastructure (AWS, Azure, GCP). Below £5K, self-service tools may suffice. Above £200K, we recommend ongoing embedded FinOps support.",
+                q: "What exactly happens during the 6-Week FinOps Sprint?",
+                a: "The Sprint is structured in three phases: Weeks 1-2 focus on visibility (spend audit, tagging assessment, waste identification). Weeks 3-4 focus on optimisation (rightsizing, commitment strategy, cost anomaly detection). Weeks 5-6 focus on innovation (governance policies, forecasting models, team training). You receive comprehensive deliverables at each phase, culminating in a complete FinOps foundation.",
               },
               {
-                q: "Do we need to stop development during the Sprint?",
-                a: "No. The Sprint is designed to run alongside your normal operations. We'll need ~2-4 hours/week from your engineering lead and finance stakeholder for reviews and approvals. Implementation of quick wins is done collaboratively with minimal disruption.",
+                q: "Who is the Sprint designed for?",
+                a: "Organisations spending £10K–£250K per month on AWS, Azure, or GCP. It's ideal for UK startups and SMEs that need structured FinOps governance but aren't ready to hire a full-time FinOps engineer. If you spend below £10K/month, self-service tools may suffice.",
               },
               {
-                q: "What if we're multi-cloud (AWS + Azure + GCP)?",
-                a: "Perfect. We specialise in multi-cloud FinOps. The Sprint covers all three major cloud providers and builds a unified cost allocation and governance playbook across your entire cloud estate.",
+                q: "How soon can results be seen?",
+                a: "Quick wins are typically identified within the first 30 days. Full ROI is usually realised within 8-12 weeks based on FinOps benchmarks. Most engagements identify 15-35% optimisable spend by day 60.",
               },
               {
-                q: "How is this different from hiring a FinOps engineer?",
-                a: "You get immediate certified expertise (FOCP + FOCUS Analyst) without 6-month hiring delays, onboarding costs, or £60-90K annual salaries. The lab-validated Sprint is designed to target ROI within 8-12 weeks based on FinOps benchmarks.* Plus, you avoid the risk of a bad hire.",
+                q: "What tools or access are needed?",
+                a: "We leverage your existing cloud provider tools (AWS Cost Explorer, Azure Cost Management, GCP Billing) plus open-source solutions. No additional SaaS purchases required. We'll need read-only billing access and collaboration with your engineering lead (~2-4 hours/week).",
               },
               {
-                q: "Do we need to buy any SaaS tools?",
-                a: "No. We leverage your existing cloud provider tools (AWS Cost Explorer, Azure Cost Management, GCP Billing) plus open-source solutions. If you already have a FinOps platform (CloudHealth, CloudZero, etc.), we'll work with it — but we don't require you to purchase one.",
+                q: "What certifications does Sohil hold?",
+                a: "Sohil Bhayani is FOCP (FinOps Certified Practitioner) and FOCUS Certified, with hands-on expertise in AWS CUR, Athena, Power BI, Excel, Supabase, and Next.js/TypeScript for building custom FinOps dashboards and reporting solutions.",
               },
               {
-                q: "What happens after the 6 weeks?",
-                a: "You'll have a complete FinOps foundation: waste eliminated, forecasts accurate, governance in place, and team trained. Many clients continue with quarterly reviews (£2-4K/quarter) to maintain maturity. Others run independently using the playbooks we deliver.",
+                q: "Do you also take on contract or full-time FinOps roles?",
+                a: "Yes — while Zyorix operates as an independent FinOps consultancy, Sohil Bhayani (FOCP + FOCUS Certified) is also open to hybrid engagements or fixed-term FinOps roles for UK or remote teams.",
               },
               {
-                q: "How quickly will we see ROI?",
-                a: "Quick wins typically identified within 30 days; ROI typically realised in 6–8 weeks based on past Sprint projects. Most engagements identify 15-35% optimisable spend by day 60. Example: £50K/month spend with 25% optimisation = £150K potential annual value.*",
+                q: "Can we continue working together after the Sprint?",
+                a: "Absolutely. Many clients choose to extend the collaboration for ongoing cost reviews, forecasting accuracy checks, and governance support — tailored to their budget and needs.",
               },
               {
-                q: "What if our cloud architecture is complex?",
-                a: "Complex architectures often have the most optimisation potential. We've worked with microservices, Kubernetes, serverless, data pipelines, and hybrid environments. Our FOCP certification ensures we understand the technical nuances that impact cost.",
-              },
-              {
-                q: "What results should we expect?",
-                a: "15-35% is the typical range of optimisable spend identified for startups/SMEs with basic or no FinOps practices (observed across recent Sprint projects, 2024-25). If you've already done significant optimisation, the percentage may be lower but still meaningful. We'll give you an honest assessment in the discovery call.*",
-              },
-              {
-                q: "Is the Sprint remote or on-site?",
-                a: "Fully remote. All workshops, reviews, and delivery are done via video calls and collaborative tools. This keeps costs down and schedules flexible. For London-based clients, we can do on-site kickoffs if preferred.",
+                q: "How is success measured?",
+                a: "Each Sprint begins with a clearly defined baseline of your current cloud spend, usage patterns, and forecast accuracy. At completion, you receive a verified improvement report detailing: • spend and efficiency trends compared against the baseline • forecast variance, typically maintained within ±5–10% • optimisation, tagging, and governance actions implemented. All results are evidence-based and traceable to your initial data — reflecting measurable operational improvements rather than guaranteed savings.",
               },
             ].map((faq, i) => (
               <motion.div

@@ -173,6 +173,9 @@ export default function Pricing() {
                   View Sprint Details
                   <ArrowRight className="w-5 h-5" />
                 </Link>
+                <p className="text-slate-500 mt-4 text-sm italic">
+                  Ideal for organisations spending £10 K – £250 K per month on AWS, Azure or GCP.
+                </p>
               </div>
             </motion.div>
           </div>
@@ -188,107 +191,10 @@ export default function Pricing() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
               Additional Services
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Ongoing support and specialist engagements
+            <p className="text-slate-600 mt-2 max-w-2xl mx-auto">
+              For organisations seeking continued FinOps governance or fractional analyst roles after a Sprint,
+              extended engagements are available on request.
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Quarterly Reviews */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4 }}
-              className="p-8 rounded-2xl bg-white border border-slate-200 hover-lift"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Calendar className="w-6 h-6 text-blue-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Quarterly Reviews
-                </h3>
-              </div>
-
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Ongoing FinOps support to maintain maturity, catch new waste, and
-                adapt governance as you scale
-              </p>
-
-              <div className="mb-6 pb-6 border-b border-slate-200">
-                <div className="flex items-baseline gap-2 mb-2">
-                  <div className="text-3xl font-bold text-blue-600">£2,500</div>
-                  <div className="text-slate-600">per quarter</div>
-                </div>
-                <div className="text-sm text-slate-500">
-                  Available after completing the Sprint
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                {[
-                  "Quarterly spend review & benchmarking",
-                  "Governance policy updates",
-                  "New waste identification",
-                  "Forecast accuracy tuning",
-                  "Ad-hoc consultation (4 hours)",
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            {/* Custom Engagements */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              className="p-8 rounded-2xl bg-white border border-slate-200 hover-lift"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-amber-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-slate-900">
-                  Custom Projects
-                </h3>
-              </div>
-
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Specialist engagements for specific challenges beyond the standard
-                Sprint scope
-              </p>
-
-              <div className="mb-6 pb-6 border-b border-slate-200">
-                <div className="flex items-baseline gap-2 mb-2">
-                  <div className="text-3xl font-bold text-amber-600">Custom</div>
-                  <div className="text-slate-600">pricing</div>
-                </div>
-                <div className="text-sm text-slate-500">
-                  Based on scope & complexity
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                {[
-                  "Kubernetes cost optimisation",
-                  "Data pipeline cost analysis",
-                  "FinOps platform implementation",
-                  "Multi-account architecture review",
-                  "Team training & enablement",
-                ].map((item, i) => (
-                  <div key={i} className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700 text-sm">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -503,28 +409,36 @@ export default function Pricing() {
           <div className="space-y-6">
             {[
               {
-                q: "Is the £12.5K fixed or could it increase?",
-                a: "Fixed. The Sprint is a defined scope covering AWS, Azure, and/or GCP for a typical startup/SME cloud environment (£5K-£200K monthly spend). If your environment is unusually complex (100+ accounts, heavily regulated industry), we'll quote a custom price upfront — no surprises mid-engagement.",
+                q: "What exactly happens during the 6-Week FinOps Sprint?",
+                a: "The Sprint is structured in three phases: Weeks 1-2 focus on visibility (spend audit, tagging assessment, waste identification). Weeks 3-4 focus on optimisation (rightsizing, commitment strategy, cost anomaly detection). Weeks 5-6 focus on innovation (governance policies, forecasting models, team training). You receive comprehensive deliverables at each phase, culminating in a complete FinOps foundation.",
               },
               {
-                q: "What if I spend less than £5K/month on cloud?",
-                a: "The Sprint may be overkill. At that spend level, self-service tools (AWS Cost Explorer, Savings Plans Calculator) and basic tagging may suffice. We'll give you an honest assessment in the discovery call.",
+                q: "Who is the Sprint designed for?",
+                a: "Organisations spending £10K–£250K per month on AWS, Azure, or GCP. It's ideal for UK startups and SMEs that need structured FinOps governance but aren't ready to hire a full-time FinOps engineer. If you spend below £10K/month, self-service tools may suffice.",
               },
               {
-                q: "Can I pay in installments?",
-                a: "Yes. Standard terms: 50% upfront, 50% at Week 3 kickoff. Other arrangements available for UK companies upon request.",
+                q: "How soon can results be seen?",
+                a: "Quick wins are typically identified within the first 30 days. Full ROI is usually realised within 8-12 weeks based on FinOps benchmarks. Most engagements identify 15-35% optimisable spend by day 60.",
               },
               {
-                q: "What if the Sprint doesn't deliver value?",
-                a: "We offer a transparent discovery call where we'll audit your environment and give you an honest projection of optimisation potential. If we don't think you'll see meaningful ROI, we'll tell you upfront — before you commit. Our track record shows most clients identify 15-35% optimisable spend.*",
+                q: "What tools or access are needed?",
+                a: "We leverage your existing cloud provider tools (AWS Cost Explorer, Azure Cost Management, GCP Billing) plus open-source solutions. No additional SaaS purchases required. We'll need read-only billing access and collaboration with your engineering lead (~2-4 hours/week).",
               },
               {
-                q: "Is there a discount for multiple Sprints (different teams/accounts)?",
-                a: "Yes. For multi-Sprint engagements or enterprise-scale clients, contact us for volume pricing.",
+                q: "What certifications does Sohil hold?",
+                a: "Sohil Bhayani is FOCP (FinOps Certified Practitioner) and FOCUS Certified, with hands-on expertise in AWS CUR, Athena, Power BI, Excel, Supabase, and Next.js/TypeScript for building custom FinOps dashboards and reporting solutions.",
               },
               {
-                q: "How do you ensure ROI measurement transparency?",
-                a: "Each Sprint includes a documented baseline (captured in weeks 1-2) and a post-Sprint measurement (30-60 days after implementation), signed off by the client — following the Zyorix Verified Savings Methodology™. We measure against your actual cloud bill, not estimates.",
+                q: "Do you also take on contract or full-time FinOps roles?",
+                a: "Yes — while Zyorix operates as an independent FinOps consultancy, Sohil Bhayani (FOCP + FOCUS Certified) is also open to hybrid engagements or fixed-term FinOps roles for UK or remote teams.",
+              },
+              {
+                q: "Can we continue working together after the Sprint?",
+                a: "Absolutely. Many clients choose to extend the collaboration for ongoing cost reviews, forecasting accuracy checks, and governance support — tailored to their budget and needs.",
+              },
+              {
+                q: "How is success measured?",
+                a: "Each Sprint begins with a clearly defined baseline of your current cloud spend, usage patterns, and forecast accuracy. At completion, you receive a verified improvement report detailing: • spend and efficiency trends compared against the baseline • forecast variance, typically maintained within ±5–10% • optimisation, tagging, and governance actions implemented. All results are evidence-based and traceable to your initial data — reflecting measurable operational improvements rather than guaranteed savings.",
               },
             ].map((faq, i) => (
               <motion.div
