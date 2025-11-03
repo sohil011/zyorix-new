@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, TrendingDown, Target, BarChart3, Calendar } from "lucide-react";
 import Link from "next/link";
 import { trackCta } from "./components/trackCta";
+import CalPopupButton from "./components/CalPopupButton";
 
 export default function Home() {
   const handleCtaClick = (location: string) => {
@@ -54,15 +55,11 @@ export default function Home() {
               </p>
 
               {/* Dual CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Link
-                  href="/contact"
-                  onClick={() => handleCtaClick("hero_primary")}
-                  className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"
-                >
-                  Work With Me
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                <CalPopupButton className="btn-primary pulse-cta inline-flex items-center justify-center gap-2 px-8 py-4 text-lg">
+                  Book a 30-min Call
+                  <Calendar className="w-5 h-5" />
+                </CalPopupButton>
                 <Link
                   href="/about-sohil"
                   className="btn-secondary inline-flex items-center justify-center gap-2 px-8 py-4 text-lg"
@@ -70,6 +67,11 @@ export default function Home() {
                   View Portfolio
                   <ArrowRight className="w-5 h-5" />
                 </Link>
+              </div>
+              <div className="mb-8">
+                <a href="/book" target="_blank" rel="noopener noreferrer" className="text-sm text-emerald-700 underline hover:text-emerald-800">
+                  Open booking in new tab
+                </a>
               </div>
 
               {/* Social proof stats */}

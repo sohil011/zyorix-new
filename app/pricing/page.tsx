@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { trackCta } from "../components/trackCta";
+import CalPopupButton from "../components/CalPopupButton";
 
 export default function Pricing() {
   return (
@@ -470,16 +471,11 @@ export default function Pricing() {
             your spend, identify quick wins, and give you a custom ROI projection
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Link
-              href="/contact"
-              onClick={() => trackCta("book_consultation", "pricing_cta")}
-              className="btn-primary pulse-cta inline-flex items-center gap-2 px-8 py-4 text-lg"
-              aria-label="Book free 30-minute FinOps discovery call with Zyorix"
-            >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+            <CalPopupButton className="btn-primary pulse-cta inline-flex items-center gap-2 px-8 py-4 text-lg">
               Book Free Discovery Call
               <Calendar className="w-5 h-5" />
-            </Link>
+            </CalPopupButton>
             <Link
               href="/case-studies"
               className="btn-secondary inline-flex items-center gap-2 px-8 py-4 text-lg"
@@ -488,6 +484,11 @@ export default function Pricing() {
               View Case Studies
               <ArrowRight className="w-5 h-5" />
             </Link>
+          </div>
+          <div className="mb-8">
+            <a href="/book" target="_blank" rel="noopener noreferrer" className="text-sm text-emerald-700 underline hover:text-emerald-800">
+              Open booking in new tab
+            </a>
           </div>
 
           <div className="flex flex-wrap justify-center gap-8 text-sm text-slate-600">
