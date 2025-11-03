@@ -38,12 +38,11 @@ export default function About() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Independent FinOps <span className="gradient-text">Lab</span>{" "}
-              <span className="gradient-text">Built for Startups</span>
+              About <span className="gradient-text">Zyorix</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Zyorix is an independent FinOps consultancy and lab led by Sohil Bhayani (FOCP + FOCUS). We prototype and validate FinOps frameworks in controlled lab environments, then help organisations adopt them with confidence.
+              Zyorix is the FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified FinOps Analyst & Advisor). We help UK startups and SMEs eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™.
             </p>
           </motion.div>
         </div>
@@ -552,6 +551,15 @@ export default function About() {
             We'll only recommend a Sprint if our assessment shows clear ROI
             potential for your specific environment.
           </p>
+
+          <div className="mt-8 pt-8 border-t border-slate-200 max-w-lg mx-auto">
+            <p className="text-center text-slate-700">
+              Learn more about Sohil's background →{" "}
+              <Link href="/about-sohil" className="text-emerald-600 hover:text-emerald-700 font-semibold underline">
+                View Portfolio
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
     </main>
