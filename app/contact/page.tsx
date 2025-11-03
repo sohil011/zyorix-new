@@ -1,11 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Script from "next/script";
 import {
   ArrowRight,
-  Calendar,
   Mail,
-  Phone,
   MapPin,
   Clock,
   CheckCircle2,
@@ -259,25 +258,17 @@ export default function Contact() {
                 </p>
               </div>
 
-              {/* Calendly Placeholder */}
-              <div className="rounded-2xl border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-white p-8 text-center mb-8">
-                <Calendar className="w-16 h-16 text-emerald-600 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-slate-900 mb-3">
-                  Calendar Booking
-                </h3>
-                <p className="text-slate-600 mb-6">
-                  Calendly embed will go here. For now, email us to schedule:
-                </p>
-                <a
-                  href="mailto:info@zyorix.com?subject=Discovery Call Request"
-                  onClick={() =>
-                    trackCta("email_discovery_call", "contact_page")
-                  }
-                  className="btn-primary inline-flex items-center gap-2"
-                >
-                  <Mail className="w-5 h-5" />
-                  Email to Schedule
-                </a>
+              {/* Calendly Inline Embed */}
+              <div className="mt-6 mb-8">
+                <div
+                  className="calendly-inline-widget"
+                  data-url="https://calendly.com/sohilbhayani/30min"
+                  style={{minWidth: '320px', height: '700px'}}
+                />
+                <Script
+                  src="https://assets.calendly.com/assets/external/widget.js"
+                  strategy="lazyOnload"
+                />
               </div>
 
               {/* Contact Information */}
