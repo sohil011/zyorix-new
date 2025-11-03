@@ -27,10 +27,14 @@ export default function Contact() {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
-              Book Your <span className="gradient-text">Free FinOps Discovery Call</span> — Identify 10–15% Savings Opportunities in 30 Min
+              Contact <span className="gradient-text">Zyorix</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-4 leading-relaxed">
+              Roles or projects — tell us how you'd like to collaborate.
+            </p>
+
+            <p className="text-lg text-slate-600 mb-4 leading-relaxed">
               30-minute consultation with Sohil to review your cloud spend, highlight
               potential optimisation areas, and assess whether the 6-Week FinOps
               Sprint™ could benefit your environment
@@ -179,12 +183,15 @@ export default function Contact() {
                   >
                     Message (Optional)
                   </label>
+                  <p className="text-sm text-slate-600 mb-2">
+                    Please mention: Full-time / Contract / Consulting
+                  </p>
                   <textarea
                     id="message"
                     name="message"
                     rows={4}
                     className="w-full"
-                    placeholder="Tell us about your cloud cost challenges..."
+                    placeholder="Tell us about your cloud cost challenges and preferred engagement type..."
                   />
                 </div>
 
