@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Book Free FinOps Discovery Call | Zyorix UK – 30-Min Cloud Cost Assessment",
-  description: "Schedule a free 30-minute consultation with Zyorix to review your cloud spend and explore FinOps optimisation potential — no obligation, no sales pitch.",
+  title: "Contact Zyorix | Sohil Bhayani – FinOps Roles & Projects",
+  description: "Get in touch with Sohil Bhayani for full-time, contract, or consulting FinOps engagements. Schedule a free consultation to discuss your cloud cost challenges.",
   openGraph: {
-    title: "Book Free FinOps Discovery Call | Zyorix UK",
-    description: "Schedule a free 30-minute consultation with Zyorix to review your cloud spend and explore FinOps optimisation potential — no obligation, no sales pitch.",
+    title: "Contact Zyorix | Sohil Bhayani – FinOps Roles & Projects",
+    description: "Get in touch with Sohil Bhayani for full-time, contract, or consulting FinOps engagements. Schedule a free consultation to discuss your cloud cost challenges.",
   },
 };
 
