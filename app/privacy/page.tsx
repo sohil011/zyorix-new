@@ -80,6 +80,23 @@ export default function PrivacyPolicy() {
           <p className="text-slate-700 leading-relaxed mt-4">
             We ensure all third parties comply with UK GDPR and have adequate safeguards in place.
           </p>
+
+          <h3 className="text-lg font-semibold text-slate-900 mt-6 mb-3">Scheduling</h3>
+          <p className="text-slate-700 leading-relaxed">
+            We use <strong>Cal.com</strong> to provide online scheduling for consultations.
+            When you book a meeting, Cal.com may collect limited data (such as your name,
+            email address, and timezone) to manage your booking and prevent conflicts.
+            This data is processed under legitimate interest in providing scheduling
+            functionality. You can read Cal.com's privacy policy at{" "}
+            <a
+              href="https://cal.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-600 hover:text-emerald-700 underline"
+            >
+              cal.com/privacy
+            </a>.
+          </p>
         </section>
 
         <section className="mb-8">

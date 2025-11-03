@@ -9,7 +9,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { trackCta } from "../components/trackCta";
-import CalendlyInline from "../components/CalendlyInline";
+import CalBooking from "../components/CalBooking";
 
 export default function Contact() {
   return (
@@ -258,8 +258,8 @@ export default function Contact() {
                 </p>
               </div>
 
-              {/* Calendly Inline Embed */}
-              <CalendlyInline url="https://calendly.com/sohilbhayani/30min" height={700} />
+              {/* Cal.com Booking Widget */}
+              <CalBooking />
 
               {/* Contact Information */}
               <div className="space-y-6">
