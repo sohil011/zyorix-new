@@ -4,20 +4,20 @@ import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks (UK)",
-  description: "Independent FinOps consultancy and lab validating enterprise-grade cost governance, optimisation, and forecasting models. FOCP + FOCUS certified.",
+  title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS) — Zyorix",
+  description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™.",
   metadataBase: new URL("https://www.zyorix.com"),
   openGraph: {
-    title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks (UK)",
-    description: "Independent FinOps consultancy and lab validating enterprise-grade cost governance, optimisation, and forecasting models. FOCP + FOCUS certified.",
+    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS) — Zyorix",
+    description: "Zyorix — a UK FinOps consultancy founded by Sohil Bhayani (FOCP + FOCUS Certified). Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™.",
     images: ["/img/og/social-share.webp"],
     url: "https://www.zyorix.com",
     siteName: "Zyorix"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zyorix — FinOps Lab & Pilot-Ready Frameworks",
-    description: "Lab-validated FinOps frameworks designed to help organisations target 15–35% cost optimisation."
+    title: "Sohil Bhayani | FinOps Analyst & Advisor (FOCP + FOCUS)",
+    description: "Helping organisations eliminate waste and build predictable cloud spend with the 6-Week FinOps Sprint™."
   }
 };
 
@@ -65,6 +65,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="border-t border-slate-200 mt-8 pt-6">
+            <p className="text-center text-xs text-slate-500 max-w-3xl mx-auto mb-3">
+              Zyorix by Sohil Bhayani — FinOps Analyst & Advisor (FOCP + FOCUS Certified). Open to full-time, contract, and consulting engagements.
+            </p>
             <p className="text-center text-xs text-slate-500 max-w-3xl mx-auto mb-4">
               Zyorix operates as an independent consultancy and FinOps lab. No claims of prior enterprise delivery; frameworks are validated in lab settings.
             </p>
