@@ -68,15 +68,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="border-t border-slate-200">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-              <p className="text-center text-xs text-slate-500 max-w-3xl mx-auto mb-3 leading-relaxed">
-                Zyorix by Sohil Bhayani — FinOps Analyst & Advisor (FOCP + FOCUS Certified). Open to full-time, contract, and consulting engagements.
-              </p>
-              <p className="text-center text-xs text-slate-500 max-w-3xl mx-auto mb-4 leading-relaxed">
-                Zyorix operates as an independent consultancy and FinOps lab. No claims of prior enterprise delivery; frameworks are validated in lab settings.
-              </p>
-              <div className="text-center text-xs text-slate-400">
-                &copy; {new Date().getFullYear()} Zyorix.com. All rights reserved.
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+              <div className="text-center text-sm text-slate-400">
+                &copy; {new Date().getFullYear()} Zyorix Ltd. All rights reserved.
               </div>
             </div>
           </div>

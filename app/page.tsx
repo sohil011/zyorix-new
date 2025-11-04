@@ -46,12 +46,8 @@ export default function Home() {
                 Helping organisations turn cloud spend into predictable value through visibility, optimisation, and governance.
               </p>
 
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Open to full-time, contract, and consulting FinOps engagements.
-              </p>
-
-              <p className="text-sm bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 text-amber-900 mb-8">
-                Zyorix operates as an independent consultancy and FinOps lab. Frameworks are validated in lab settings and prepared for pilots/adoption.
               </p>
 
               {/* Dual CTAs */}
@@ -219,13 +215,6 @@ export default function Home() {
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               Everything you need to transform cloud chaos into predictable, optimised spend — no SaaS bloat, no vendor lock-in
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto mb-8 p-4 rounded-xl bg-amber-50 border-2 border-amber-200">
-            <p className="text-sm text-amber-900 font-semibold">
-              <span className="text-base mr-2">⚠️</span>
-              <strong>Important:</strong> Outcome ranges shown (15–35% optimisation, ±5–10% forecast accuracy) are based on FinOps Foundation benchmarks and lab-validated Sprint methodology. These are target ranges designed to help organisations optimise, not guarantees. Results vary by environment.
             </p>
           </div>
 
@@ -550,21 +539,6 @@ export default function Home() {
             >
               View All FAQs →
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================
-          FOOTNOTE DISCLAIMER
-          ======================================== */}
-      <section className="py-8 bg-slate-100">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto p-6 rounded-xl bg-amber-50 border border-amber-200">
-            <p className="text-sm text-slate-700 leading-relaxed text-center">
-              <strong className="text-amber-900">Important Disclosure:</strong><br/><br/>
-              * Outcome ranges (15–35% optimisation, ±5–10% forecast accuracy, 90-95% cost allocation) are modelled targets based on FinOps Foundation benchmarks and lab-validated Sprint methodology.<br/><br/>
-              Realised outcomes depend on the changes your organisation implements and your current FinOps maturity. Baselines are documented per the Zyorix Lab Methodology.
-            </p>
           </div>
         </div>
       </section>

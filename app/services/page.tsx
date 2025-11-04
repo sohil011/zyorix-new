@@ -211,10 +211,10 @@ export default function Services() {
           >
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="rounded-2xl bg-gradient-to-br from-amber-50 to-white p-8 border border-amber-100 shadow-lg">
+                <div className="rounded-2xl bg-gradient-to-br from-amber-50 to-white p-8 border border-emerald-100 shadow-lg">
                   <div className="space-y-6">
-                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-amber-100">
-                      <Zap className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-emerald-100">
+                      <Zap className="w-8 h-8 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 mb-1">
                           Quick Wins
@@ -225,8 +225,8 @@ export default function Services() {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-amber-100">
-                      <TrendingUp className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-emerald-100">
+                      <TrendingUp className="w-8 h-8 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 mb-1">
                           Commitment Strategy
@@ -237,8 +237,8 @@ export default function Services() {
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-amber-100">
-                      <Users className="w-8 h-8 text-amber-600 flex-shrink-0" />
+                    <div className="flex items-start gap-4 p-4 rounded-lg bg-white border border-emerald-100">
+                      <Users className="w-8 h-8 text-emerald-600 flex-shrink-0" />
                       <div>
                         <div className="font-semibold text-slate-900 mb-1">
                           Team Enablement
@@ -254,11 +254,11 @@ export default function Services() {
 
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-amber-600" />
+                  <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-emerald-600" />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-amber-600">
+                    <div className="text-sm font-semibold text-emerald-600">
                       WEEKS 3-4
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900">
@@ -286,13 +286,13 @@ export default function Services() {
                     "Train engineering team on cost-aware design",
                   ].map((item, i) => (
                     <div key={i} className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                       <span className="text-slate-700">{item}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-6 p-4 rounded-xl bg-amber-50 border border-amber-100">
+                <div className="mt-6 p-4 rounded-xl bg-amber-50 border border-emerald-100">
                   <div className="font-semibold text-slate-900 mb-2">
                     Deliverables:
                   </div>

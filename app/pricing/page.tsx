@@ -70,20 +70,6 @@ export default function Pricing() {
       </section>
 
       {/* ========================================
-          UPFRONT DISCLAIMER
-          ======================================== */}
-      <section className="py-8 bg-slate-50">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div className="p-4 rounded-xl bg-amber-50 border-2 border-amber-200">
-            <p className="text-sm text-amber-900 font-semibold">
-              <span className="text-base mr-2">⚠️</span>
-              <strong>Important:</strong> ROI projections and optimisation ranges shown (15–35%, 8-12 week payback) are based on FinOps Foundation benchmarks and Zyorix Sprint methodology simulations, not verified client engagements. Actual results vary by environment complexity and implementation.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ========================================
           PRIMARY OFFERING - 6-Week Sprint
           ======================================== */}
       <section className="py-20 bg-white">
@@ -282,7 +268,7 @@ export default function Pricing() {
                     2-3 months (setup + learning)
                   </td>
                   <td className="py-4 px-4">
-                    <span className="inline-block px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-700">
+                    <span className="inline-block px-2 py-1 rounded text-xs font-semibold bg-slate-100 text-slate-700">
                       Medium
                     </span>
                   </td>
@@ -300,7 +286,7 @@ export default function Pricing() {
                     6-12 months (trial & error)
                   </td>
                   <td className="py-4 px-4">
-                    <span className="inline-block px-2 py-1 rounded text-xs font-semibold bg-amber-100 text-amber-700">
+                    <span className="inline-block px-2 py-1 rounded text-xs font-semibold bg-slate-100 text-slate-700">
                       Medium
                     </span>
                   </td>
@@ -375,12 +361,6 @@ export default function Pricing() {
                   <div className="text-sm text-slate-600">{stat.desc}</div>
                 </motion.div>
               ))}
-            </div>
-
-            <div className="p-4 rounded-xl bg-amber-50 border-2 border-amber-200 mb-6">
-              <p className="text-sm text-amber-900 font-semibold">
-                <strong>Important:</strong> This is an illustrative example based on typical FinOps benchmarks. Your actual results depend on your current FinOps maturity, architecture, and usage patterns. We measure against a documented baseline per the Zyorix Methodology.*
-              </p>
             </div>
 
             <Link

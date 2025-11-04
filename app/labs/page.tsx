@@ -123,18 +123,9 @@ export default function LabsAndDemos() {
               <span className="gradient-text">Labs & Demos</span>
             </h1>
 
-            <p className="text-xl text-slate-600 mb-4 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
               Internal demonstrations and lab simulations showcasing Zyorix's FinOps frameworks: dashboards, tagging compliance models, budget/forecast workflows, and optimisation backlogs.
             </p>
-
-            <div className="max-w-3xl mx-auto mb-8 p-4 rounded-lg bg-amber-50 border-2 border-amber-200">
-              <p className="text-sm text-amber-900 font-semibold flex items-start gap-2">
-                <span className="text-lg flex-shrink-0">⚠️</span>
-                <span>
-                  <strong>Important:</strong> These are lab simulations and demonstrations, not client engagements. Frameworks are validated in lab settings and designed to help organisations target optimisation outcomes.
-                </span>
-              </p>
-            </div>
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
               {[
@@ -278,19 +269,6 @@ export default function LabsAndDemos() {
               </div>
             </motion.div>
           ))}
-
-          {/* Important Disclosure */}
-          <div className="mt-16 p-6 rounded-xl bg-amber-50 border border-amber-200">
-            <p className="text-sm text-slate-700 leading-relaxed">
-              <strong className="text-amber-900">Important Disclosure:</strong><br/><br/>
-
-              These scenarios are lab simulations demonstrating Zyorix Sprint methodology, not client engagements.<br/><br/>
-
-              Lab-validated frameworks designed to help organisations target cost optimisation outcomes (e.g., rightsizing, reserved capacity planning, waste elimination). Baselines documented per the Zyorix Lab Methodology.<br/><br/>
-
-              Actual outcomes depend on your environment complexity, current FinOps maturity, and implementation commitment.
-            </p>
-          </div>
         </div>
       </section>
 

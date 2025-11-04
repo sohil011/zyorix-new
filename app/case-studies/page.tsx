@@ -128,18 +128,9 @@ export default function CaseStudies() {
               These are benchmark-aligned modelled scenarios to illustrate typical outcomes; results vary.
             </p>
 
-            <p className="text-xl text-slate-600 mb-4 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
               See how a 6-Week FinOps Sprint™ typically identifies ≈15–35% optimisable spend, improves forecast accuracy, and builds predictable cloud budgets — using benchmark-based modelled scenarios aligned to FinOps best practices.
             </p>
-
-            <div className="max-w-3xl mx-auto mb-8 p-4 rounded-lg bg-amber-50 border-2 border-amber-200">
-              <p className="text-sm text-amber-900 font-semibold flex items-start gap-2">
-                <span className="text-lg flex-shrink-0">⚠️</span>
-                <span>
-                  <strong>Important:</strong> These examples are modelled from industry benchmarks and Zyorix Sprint methodology simulations. They are not Zyorix client results.
-                </span>
-              </p>
-            </div>
 
             <div className="flex flex-wrap justify-center gap-8 text-center">
               {[
@@ -283,19 +274,6 @@ export default function CaseStudies() {
               </div>
             </motion.div>
           ))}
-
-          {/* Important Disclosure */}
-          <div className="mt-16 p-6 rounded-xl bg-amber-50 border border-amber-200">
-            <p className="text-sm text-slate-700 leading-relaxed">
-              <strong className="text-amber-900">Important Disclosure:</strong><br/><br/>
-
-              These scenarios are representative and modelled, based on FinOps benchmarks and Zyorix Sprint methodology simulations, not verified Zyorix client engagements.<br/><br/>
-
-              Realised outcomes depend on the changes you implement (e.g., rightsizing, RIs/SPs/CUDs, decommissioning). We measure against a documented baseline per the Zyorix Methodology.<br/><br/>
-
-              Results vary by environment complexity, current FinOps maturity, and implementation pace.
-            </p>
-          </div>
         </div>
       </section>
 
